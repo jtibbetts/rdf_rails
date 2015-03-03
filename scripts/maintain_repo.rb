@@ -6,26 +6,6 @@ ENV['RAILS_ENV'] ||= 'development'
 
 require File.expand_path('../../config/environment', __FILE__)
 
-# directories = []
-# Dir.glob('../repo/**/*/') do |path|
-#   directories << path[8..-2]
-# end
-#
-# def file_content(directory)
-#   dirname = File.join(PROJECT_BASE, 'repo', directory)
-#   files = []
-#   Dir.entries(dirname).each do |entry|
-#     unless entry =~ /^\..*/
-#       if File.file?(File.join(dirname, entry))
-#         files << entry
-#       end
-#     end
-#   end
-#   files
-# end
-#
-# directories.each {|d| puts "#{d}: #{file_content(d)}"}directories = []
-
 def tree_of_paths(ancestor_node)
   paths = []
 
@@ -50,4 +30,5 @@ def tree_of_paths(ancestor_node)
   paths
 end
 
-puts tree_of_paths('../repo')
+def relocate_prefixes
+puts tree_of_paths(File.join(PROJECT_BASE, 'repo'))
