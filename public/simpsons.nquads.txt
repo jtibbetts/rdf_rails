@@ -1,0 +1,6 @@
+<http://rdf.kinexis.com/simpsons/Bart> <http://purl.org/vocab/bio/0.1/father> <http://rdf.kinexis.com/simpsons/Homer> .
+<http://rdf.kinexis.com/simpsons/Bart> <http://purl.org/vocab/bio/0.1/mother> <http://rdf.kinexis.com/simpsons/Marge> .
+<http://rdf.kinexis.com/simpsons/Bart> <http://xmlns.com/foaf/0.1/knows> <http://rdf.kinexis.com/simpsons/Todd> .
+<http://rdf.kinexis.com/simpsons/Todd> <http://purl.org/vocab/bio/0.1/father> <http://rdf.kinexis.com/simpsons/Ned> .
+<http://rdf.kinexis.com/simpsons/Todd> <http://purl.org/vocab/bio/0.1/mother> <http://rdf.kinexis.com/simpsons/Maude> .
+<http://rdf.kinexis.com/simpsons/Todd> <http://schema.org/deathDate> "2000-02-13" .

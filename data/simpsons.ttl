@@ -1,0 +1,14 @@
+@prefix simp:	<http://rdf.kinexis.com/simpsons/> .
+@prefix bio:	<http://purl.org/vocab/bio/0.1/> .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+@prefix schema:	<http://schema.org/> .
+
+simp:Bart
+	bio:father simp:Homer ;
+	bio:mother simp:Marge ;
+	foaf:knows simp:Todd .
+
+simp:Todd
+	bio:father simp:Ned ;
+	bio:mother simp:Maude ;
+	schema:deathDate "2000-02-13" .

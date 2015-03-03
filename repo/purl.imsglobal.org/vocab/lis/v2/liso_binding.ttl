@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bind: <http://purl.org/semantictools/v1/vocab/bind#> .
+@prefix vann: <http://purl.org/vocab/vann#> .
+@prefix liso: <http://purl.imsglobal.org/vocab/lis/v2/outcomes#> .
+
+liso:Result rdf:type bind:Addressable .
+liso:Result rdfs:subClassOf
+  [ rdf:type bind:AssociationQualifier ;
+    bind:onProperty liso:resultPerson ;
+    bind:associationType bind:Aggregation
+  ] .
+liso:LineItem rdf:type bind:Addressable .
+liso:LineItem rdfs:subClassOf
+  [ rdf:type bind:AssociationQualifier ;
+    bind:onProperty liso:reportingMethod ;
+    bind:associationType bind:Aggregation
+  ], 
+  [ rdf:type bind:AssociationQualifier ;
+    bind:onProperty liso:result ;
+    bind:associationType bind:Composition
+  ], 
+  [ rdf:type bind:AssociationQualifier ;
+    bind:onProperty liso:scoreConstraints ;
+    bind:associationType bind:Aggregation
+  ], 
+  [ rdf:type bind:AssociationQualifier ;
+    bind:onProperty liso:results ;
+    bind:associationType bind:Composition
+  ] .
+liso:ScoreConstraints rdf:type bind:Addressable .
+liso:ScoreConstraints rdf:type bind:AbstractClass .
+liso:NumericLimits rdf:type bind:Addressable .
+liso:ResultContainer rdf:type bind:Addressable .
+liso:LineItemContainer rdf:type bind:Addressable .
+

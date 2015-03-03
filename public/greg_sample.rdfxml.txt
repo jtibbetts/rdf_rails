@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<rdf:RDF xmlns:foaf='http://xmlns.com/foaf/0.1/' xmlns:ns0='http://purl.org/vocab/bio/0.1/' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:schema='http://schema.org/'>
+  <rdf:Description rdf:about='http://example.com/resources/Alice'>
+    <ns0:father rdf:resource='http://example.com/resources/John'>
+    <ns0:mother rdf:resource='http://example.com/resources/Susan'>
+    <foaf:knows>
+      <rdf:Description rdf:about='http://example.com/resources/Bob'>
+        <ns0:father rdf:resource='http://example.com/resources/Richard'>
+        <ns0:mother rdf:resource='http://example.com/resources/Martha'>
+        <schema:birthDate>1994-08-07</schema:birthDate>
+      </rdf:Description>
+    </foaf:knows>
+  </rdf:Description>
+  
+</rdf:RDF>

@@ -1,0 +1,164 @@
+@prefix ci: <http://purl.imsglobal.org/vocab/lti/v1/ci#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix lti: <http://purl.imsglobal.org/vocab/lti/v2/lti#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bind: <http://purl.org/semantictools/v1/vocab/bind#> .
+@prefix vann: <http://purl.org/vocab/vann#> .
+
+<http://purl.imsglobal.org/vocab/lti/v1/ci#> a owl:Ontology  ;
+  rdfs:label "Content-Item Message" ;
+  a bind:TargetNamespace ;
+  bind:suggestedPrefix "ci" .
+
+ci:ContentItemPlacement rdf:type owl:Class;
+  rdfs:subClassOf 
+  [ a owl:Restriction ;
+    owl:onProperty      ci:displayWidth;
+    owl:maxCardinality  1;
+    rdfs:comment "The width in pixels of the display area."
+  ] ,
+  [ a owl:Restriction ;
+    owl:onProperty      ci:displayHeight;
+    owl:maxCardinality  1;
+    rdfs:comment "The height in pixels of the display area."
+  ] ,
+  [ a owl:Restriction ;
+    owl:onProperty      ci:windowTarget;
+    owl:maxCardinality  1;
+    rdfs:comment "The value for the <code>target</code> attribute of any anchor tag which is used to make the content-item available to users."
+  ] ,
+  [ a owl:Restriction ;
+    owl:onProperty      ci:placementOf;
+    owl:minCardinality  1;
+    owl:maxCardinality  1;
+    rdfs:comment "The content-item to be placed."
+  ] ,
+  [ a owl:Restriction ;
+    owl:onProperty      ci:presentation_document_target;
+    owl:maxCardinality  1;
+    rdfs:comment "The intended destination where the content-item is displayed to users.  The value is taken from a list of permitted targets."
+  ] .
+
+ci:ContentItem rdf:type owl:Class;
+  rdfs:subClassOf 
+  [ a owl:Restriction ;
+    owl:onProperty      ci:mediaType;
+    owl:minCardinality  1;
+    owl:maxCardinality  1;
+    rdfs:comment "The MIME type of the content-item."
+  ] ,
+  [ a owl:Restriction ;
+    owl:onProperty      ci:title;
+    owl:maxCardinality  1;
+    rdfs:comment "A plain text title of the content-item."
+  ] ,
+  [ a owl:Restriction ;
+    owl:onProperty      ci:text;
+    owl:maxCardinality  1;
+    rdfs:comment "A plain text description of the content-item."
+  ] ,
+  [ a owl:Restriction ;
+    owl:onProperty      ci:thumbnail;
+    owl:maxCardinality  1;
+    rdfs:comment "An image which may be used as a thumbnail for the content-item."
+  ] ,
+  [ a owl:Restriction ;
+    owl:onProperty      ci:icon;
+    owl:maxCardinality  1;
+    rdfs:comment "An image which may be used as an icon for the content-item."
+  ] .
+
+ci:Image rdf:type owl:Class;
+  rdfs:subClassOf 
+  [ a owl:Restriction ;
+    owl:onProperty      ci:width;
+    owl:maxCardinality  1;
+    rdfs:comment "The width in pixels of the image."
+  ] ,
+  [ a owl:Restriction ;
+    owl:onProperty      ci:height;
+    owl:maxCardinality  1;
+    rdfs:comment "The height in pixels of the image."
+  ] .
+
+ci:FileItem rdf:type owl:Class ;
+  rdfs:subClassOf ci:ContentItem ,
+  [ a owl:Restriction ;
+    owl:onProperty      ci:copyAdvice;
+    owl:maxCardinality  1
+  ] ,
+  [ a owl:Restriction ;
+    owl:onProperty      ci:expiresAt;
+    owl:maxCardinality  1
+  ] .
+
+ci:displayWidth rdf:type rdf:Property ;
+  rdfs:domain ci:ContentItemPlacement ;
+  rdfs:range xsd:integer ;
+  rdfs:comment "The width in pixels of the display area." .
+
+ci:displayHeight rdf:type rdf:Property ;
+  rdfs:domain ci:ContentItemPlacement ;
+  rdfs:range xsd:integer ;
+  rdfs:comment "The height in pixels of the display area." .
+
+ci:windowTarget rdf:type rdf:Property ;
+  rdfs:domain ci:ContentItemPlacement ;
+  rdfs:range xsd:normalizedString ;
+  rdfs:comment "The value for the <code>target</code> attribute of any anchor tag which is used to make the content-item available to users." .
+
+ci:placementOf rdf:type rdf:Property ;
+  rdfs:domain ci:ContentItemPlacement ;
+  rdfs:range ci:ContentItem ;
+  rdfs:comment "The content-item to be placed." .
+
+ci:presentation_document_target rdf:type rdf:Property ;
+  rdfs:domain ci:ContentItemPlacement ;
+  rdfs:range lti:DocumentTarget ;
+  rdfs:comment "The intended destination where the content-item is displayed to users.  The value is taken from a list of permitted targets." .
+
+ci:mediaType rdf:type rdf:Property ;
+  rdfs:domain ci:ContentItem ;
+  rdfs:range xsd:normalizedString ;
+  rdfs:comment "The MIME type of the content-item." .
+
+ci:title rdf:type rdf:Property ;
+  rdfs:domain ci:ContentItem ;
+  rdfs:range xsd:normalizedString ;
+  rdfs:comment "A plain text title of the content-item." .
+
+ci:text rdf:type rdf:Property ;
+  rdfs:domain ci:ContentItem ;
+  rdfs:range xsd:string ;
+  rdfs:comment "A plain text description of the content-item." .
+
+ci:thumbnail rdf:type rdf:Property ;
+  rdfs:domain ci:ContentItem ;
+  rdfs:range ci:Image ;
+  rdfs:comment "An image which may be used as a thumbnail for the content-item." .
+
+ci:icon rdf:type rdf:Property ;
+  rdfs:domain ci:ContentItem ;
+  rdfs:range ci:Image ;
+  rdfs:comment "An image which may be used as an icon for the content-item." .
+
+ci:width rdf:type rdf:Property ;
+  rdfs:domain ci:Image ;
+  rdfs:range xsd:integer ;
+  rdfs:comment "The width in pixels of the image." .
+
+ci:height rdf:type rdf:Property ;
+  rdfs:domain ci:Image ;
+  rdfs:range xsd:integer ;
+  rdfs:comment "The height in pixels of the image." .
+
+ci:copyAdvice rdf:type rdf:Property ;
+  rdfs:domain ci:FileItem ;
+  rdfs:range xsd:boolean .
+
+ci:expiresAt rdf:type rdf:Property ;
+  rdfs:domain ci:FileItem ;
+  rdfs:range xsd:dateTime .
+

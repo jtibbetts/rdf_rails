@@ -1,0 +1,6 @@
+<http://example.com/resources/Alice> <http://purl.org/vocab/bio/0.1/mother> <http://example.com/resources/Susan> .
+<http://example.com/resources/Alice> <http://purl.org/vocab/bio/0.1/father> <http://example.com/resources/John> .
+<http://example.com/resources/Alice> <http://xmlns.com/foaf/0.1/knows> <http://example.com/resources/Bob> .
+<http://example.com/resources/Bob> <http://purl.org/vocab/bio/0.1/father> <http://example.com/resources/Richard> .
+<http://example.com/resources/Bob> <http://purl.org/vocab/bio/0.1/mother> <http://example.com/resources/Martha> .
+<http://example.com/resources/Bob> <http://schema.org/birthDate> "1994-08-07" .

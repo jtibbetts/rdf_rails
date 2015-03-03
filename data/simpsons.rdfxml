@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<rdf:RDF xmlns:foaf='http://xmlns.com/foaf/0.1/' xmlns:ns0='http://purl.org/vocab/bio/0.1/' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:schema='http://schema.org/'>
+  <rdf:Description rdf:about='http://rdf.kinexis.com/simpsons/Bart'>
+    <ns0:father rdf:resource='http://rdf.kinexis.com/simpsons/Homer'>
+    <ns0:mother rdf:resource='http://rdf.kinexis.com/simpsons/Marge'>
+    <foaf:knows>
+      <rdf:Description rdf:about='http://rdf.kinexis.com/simpsons/Todd'>
+        <ns0:father rdf:resource='http://rdf.kinexis.com/simpsons/Ned'>
+        <ns0:mother rdf:resource='http://rdf.kinexis.com/simpsons/Maude'>
+        <schema:dateDate>2000-02-13</schema:dateDate>
+      </rdf:Description>
+    </foaf:knows>
+  </rdf:Description>
+  
+</rdf:RDF>

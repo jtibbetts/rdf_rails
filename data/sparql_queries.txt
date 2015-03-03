@@ -1,0 +1,167 @@
+# What is URI of Tom Hanks
+SELECT ?actor WHERE {
+ service <http://linkedmdb.org/sparql> 
+ {
+      ?actor <http://data.linkedmdb.org/resource/movie/actor_name> "Tom Hanks".
+ }
+}
+
+# What are movies he's been in
+SELECT ?movie WHERE {
+ service <http://linkedmdb.org/sparql> 
+ {
+      ?actor <http://data.linkedmdb.org/resource/movie/actor_name> "Tom Hanks".
+	  ?movie <http://data.linkedmdb.org/resource/movie/actor> ?actor.
+ }
+}
+
+# What are movie titles he's been in
+SELECT ?movie_title WHERE {
+ service <http://linkedmdb.org/sparql> 
+ {
+      ?actor <http://data.linkedmdb.org/resource/movie/actor_name> "Tom Hanks".
+	  ?movie <http://data.linkedmdb.org/resource/movie/actor> ?actor.
+	  ?movie <http://purl.org/dc/terms/title> ?movie_title 
+ }
+}
+
+# What are movie titles he's been in..turtle folding
+PREFIX mldb: <http://data.linkedmdb.org/resource/movie/>
+PREFIX purl: <http://purl.org/dc/terms/>
+SELECT ?movie_title WHERE {
+ service <http://linkedmdb.org/sparql> 
+ {
+      ?actor mldb:actor_name "Tom Hanks".
+	  ?movie mldb:actor ?actor.
+	  ?movie purl:title ?movie_title 
+ }
+}
+
+# What are movie titles he's been in..turtle folding
+PREFIX mldb: <http://data.linkedmdb.org/resource/movie/>
+PREFIX purl: <http://purl.org/dc/terms/>
+SELECT ?movie_title WHERE {
+ service <http://linkedmdb.org/sparql> 
+ {
+      ?actor mldb:actor_name "Tom Hanks".
+	  ?movie
+	  	mldb:actor ?actor;
+	  	purl:title ?movie_title 
+ }
+}
+
+#What are properties of a movie?
+PREFIX mldb: <http://data.linkedmdb.org/resource/movie/>
+PREFIX purl: <http://purl.org/dc/terms/>
+SELECT DISTINCT ?property WHERE {
+ service <http://linkedmdb.org/sparql> 
+ {
+      ?actor mldb:actor_name "Tom Hanks".
+	  ?movie
+	  	mldb:actor ?actor;
+	  	?property ?movie_title 
+
+ }
+}
+
+-----------------------------------------------------------------------
+| property                                                            |
+=======================================================================
+| <http://xmlns.com/foaf/0.1/based_near>                              |
+| <http://data.linkedmdb.org/resource/movie/writer>                   |
+| <http://www.w3.org/2004/02/skos/core#subject>                       |
+| <http://data.linkedmdb.org/resource/movie/film_subject>             |
+| <http://data.linkedmdb.org/resource/movie/film_format>              |
+| <http://data.linkedmdb.org/resource/movie/actor>                    |
+| <http://dbpedia.org/property/hasPhotoCollection>                    |
+| <http://data.linkedmdb.org/resource/movie/director>                 |
+| <http://data.linkedmdb.org/resource/movie/cinematographer>          |
+| <http://data.linkedmdb.org/resource/movie/film_casting_director>    |
+| <http://www.w3.org/2002/07/owl#sameAs>                              |
+| <http://data.linkedmdb.org/resource/movie/costume_designer>         |
+| <http://data.linkedmdb.org/resource/movie/film_cut>                 |
+| <http://xmlns.com/foaf/0.1/page>                                    |
+| <http://data.linkedmdb.org/resource/movie/editor>                   |
+| <http://data.linkedmdb.org/resource/movie/initial_release_date>     |
+| <http://purl.org/dc/terms/date>                                     |
+| <http://data.linkedmdb.org/resource/movie/production_company>       |
+| <http://data.linkedmdb.org/resource/movie/producer>                 |
+| <http://data.linkedmdb.org/resource/movie/country>                  |
+| <http://data.linkedmdb.org/resource/movie/film_set_designer>        |
+| <http://data.linkedmdb.org/resource/movie/genre>                    |
+| <http://data.linkedmdb.org/resource/movie/film_art_director>        |
+| <http://data.linkedmdb.org/resource/movie/music_contributor>        |
+| <http://data.linkedmdb.org/resource/movie/performance>              |
+| <http://data.linkedmdb.org/resource/movie/language>                 |
+| <http://data.linkedmdb.org/resource/movie/executive_producer>       |
+| <http://data.linkedmdb.org/resource/movie/story_contributor>        |
+| <http://data.linkedmdb.org/resource/movie/film_story_contributor>   |
+| <http://data.linkedmdb.org/resource/movie/filmid>                   |
+| <http://data.linkedmdb.org/resource/movie/runtime>                  |
+| <http://data.linkedmdb.org/resource/movie/film_production_designer> |
+| <http://purl.org/dc/terms/title>                                    |
+| <http://www.w3.org/2000/01/rdf-schema#label>                        |
+| <http://data.linkedmdb.org/resource/movie/featured_film_location>   |
+| <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>                   |
+-----------------------------------------------------------------------
+
+#What are properties of a movie?
+PREFIX mldb: <http://data.linkedmdb.org/resource/movie/>
+PREFIX purl: <http://purl.org/dc/terms/>
+SELECT DISTINCT ?actorName WHERE {
+    service <http://linkedmdb.org/sparql> {
+  	    ?kb    mldb:actor_name "Kevin Bacon".
+  		?movie mldb:actor ?kb;
+         	mldb:actor ?actor.
+  		?actor mldb:actor_name ?actorName.
+  FILTER (?kb != ?actor).
+ }
+}
+LIMIT 50
+
+#What are properties of a movie?
+PREFIX mldb: <http://data.linkedmdb.org/resource/movie/>
+PREFIX purl: <http://purl.org/dc/terms/>
+CONSTRUCT {?movie mldb:actor ?actor}
+ WHERE {
+    service <http://linkedmdb.org/sparql> {
+  	    ?kb mldb:actor_name "Kevin Bacon".
+  		?movie mldb:actor ?kb;
+         	mldb:actor ?actor.
+  		?actor mldb:actor_name ?actorName.
+  FILTER (?kb != ?actor).
+ }
+}
+
+#"Table" of triples
+PREFIX purl: <http://purl.org/dc/elements/1.1/>
+PREFIX foaf:    <http://xmlns.com/foaf/0.1/>
+PREFIX dbont:  <http://dbpedia.org/ontology/>
+PREFIX w3: <http://www.w3.org/2000/01/rdf-schema#>
+CONSTRUCT {
+    ?s a foaf:Person .
+    ?s foaf:name ?a .
+    ?s foaf:surname ?b .
+    ?s foaf:givenName ?c.
+    ?s w3:label ?d .
+    ?s purl:description ?e .
+    ?s dbont:birthPlace ?f .
+    ?s dbont:deathPlace ?g .
+    ?s dbont:birthDate ?h .
+    ?s dbont:deathDate ?i } 
+WHERE {
+	service <http://dbpedia.org/sparql> {
+	   	?s foaf:name ?a .
+	    ?s foaf:surname ?b .
+	    ?s foaf:givenName ?c .
+	    ?s w3:label ?d .
+	    ?s purl:description ?e .
+	    ?s dbont:birthPlace ?f .
+	    ?s dbont:deathPlace ?g .
+	    ?s dbont:birthDate ?h .
+	    ?s dbont:deathDate ?i .
+	    ?s purl:description "Painter"@en
+	}
+}
+
+

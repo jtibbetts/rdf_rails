@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "schema": "http://schema.org/"
+  },
+  "@graph": [
+    {
+      "@id": "http://rdf.kinexis.com/simpsons/Bart",
+      "foaf:knows": {
+        "@id": "http://rdf.kinexis.com/simpsons/Todd"
+      },
+      "http://purl.org/vocab/bio/0.1/father": {
+        "@id": "http://rdf.kinexis.com/simpsons/Homer"
+      },
+      "http://purl.org/vocab/bio/0.1/mother": {
+        "@id": "http://rdf.kinexis.com/simpsons/Marge"
+      }
+    },
+    {
+      "@id": "http://rdf.kinexis.com/simpsons/Todd",
+      "http://purl.org/vocab/bio/0.1/father": {
+        "@id": "http://rdf.kinexis.com/simpsons/Ned"
+      },
+      "http://purl.org/vocab/bio/0.1/mother": {
+        "@id": "http://rdf.kinexis.com/simpsons/Maude"
+      },
+      "schema:deathDate": "2000-02-13"
+    }
+  ]
+}

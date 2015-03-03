@@ -1,0 +1,11 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://rdf.kinexis.com/simpsons/Bart> <http://purl.org/vocab/bio/0.1/father> <http://rdf.kinexis.com/simpsons/Homer>;
+   <http://purl.org/vocab/bio/0.1/mother> <http://rdf.kinexis.com/simpsons/Marge>;
+   foaf:knows <http://rdf.kinexis.com/simpsons/Todd> .
+
+<http://rdf.kinexis.com/simpsons/Todd> <http://purl.org/vocab/bio/0.1/father> <http://rdf.kinexis.com/simpsons/Ned>;
+   <http://purl.org/vocab/bio/0.1/mother> <http://rdf.kinexis.com/simpsons/Maude>;
+   schema:deathDate "2000-02-13" .

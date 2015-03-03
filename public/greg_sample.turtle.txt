@@ -1,0 +1,11 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/resources/Alice> <http://purl.org/vocab/bio/0.1/father> <http://example.com/resources/John>;
+   <http://purl.org/vocab/bio/0.1/mother> <http://example.com/resources/Susan>;
+   foaf:knows <http://example.com/resources/Bob> .
+
+<http://example.com/resources/Bob> <http://purl.org/vocab/bio/0.1/father> <http://example.com/resources/Richard>;
+   <http://purl.org/vocab/bio/0.1/mother> <http://example.com/resources/Martha>;
+   schema:birthDate "1994-08-07" .

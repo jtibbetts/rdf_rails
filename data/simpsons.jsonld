@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "schema": "http://schema.org/",
+    "bio": "http://purl.org/vocab/bio/0.1/",
+    "simp": "http://rdf.kinexis.com/simpsons/"
+  },
+  "@graph": [
+    {
+      "@id": "simp:Bart",
+      "foaf:knows": {
+        "@id": "simp:Todd"
+      },
+      "bio:father": {
+        "@id": "simp:Homer"
+      },
+      "bio:mother": {
+        "@id": "simp:Marge"
+      }
+    },
+    {
+      "@id": "simp:Todd",
+      "bio:father": {
+        "@id": "simp:Ned"
+      },
+      "bio:mother": {
+        "@id": "simp:Maude"
+      },
+      "schema:dateDate": "2000-02-13"
+    }
+  ]
+}
