@@ -6,6 +6,8 @@ ENV['RAILS_ENV'] ||= 'development'
 
 require File.expand_path('../../config/environment', __FILE__)
 
+ancestor_node = File.join(PROJECT_BASE, 'repo')
+
 def tree_of_paths(ancestor_node)
   paths = []
 
@@ -30,5 +32,31 @@ def tree_of_paths(ancestor_node)
   paths
 end
 
-def relocate_prefixes
-puts tree_of_paths(File.join(PROJECT_BASE, 'repo'))
+def rewrite_file(filename, old_str, new_str)
+  contents = nil
+  File.open(filename, 'rb') do |f|
+    contents = f.read
+  end
+
+  new_contents = contents.gsub old_str, new_str
+
+  File.open(filename, 'wb') do |f|
+    f.write new_contents
+  end
+
+  puts "Fixed"
+end
+
+def relocate_prefixes(ancestor_node, is_local_not_purl)
+  paths = tree_of_paths(ancestor_node)
+  paths.each do |path|
+    filename = File.join(ancestor_node, path)
+    if is_local_not_purl
+      rewrite_file(filename, 'http://purl.imsglobal.org', 'http://localhost/purl.imsglobal.org')
+    else
+      rewrite_file(filename, 'http://localhost/purl.imsglobal.org', 'http://purl.imsglobal.org')
+    end
+  end
+end
+
+relocate_prefixes(ancestor_node, true)
