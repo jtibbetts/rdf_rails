@@ -5,6 +5,9 @@ gem 'rails', '4.1.6'
 gem 'sqlite3'
 gem 'mysql2', '~> 0.3.13'
 
+gem 'jquery-ui-rails'
+gem 'jquery-turbolinks'
+
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets

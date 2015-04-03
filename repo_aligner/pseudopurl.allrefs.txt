@@ -1,0 +1,1025 @@
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:    "exp" : "http://pseudopurl.kinexis.com/vocab/caliper/v1/core#",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:    "liso" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:    "lisp" : "http://pseudopurl.kinexis.com/vocab/lis/v2/pm#",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:    "lti-type" : "http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/caliper/v1/core#activity_id",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#context_id",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#timestamp"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultScoreConstraints",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultStatus",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#totalScore",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#normalScore",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#penaltyScore",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#extraCreditScore",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#assignedActivity",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#reportingMethod",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#scoreConstraints",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#result"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#lineItemOf",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#ScoreConstraints"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#normalMaximum",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#totalMaximum",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#extraCreditMaximum",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/caliper/v1/core#Activity"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/caliper/v1/core#Activity",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItem"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Context"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#NumericLimits"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Context",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItem"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#NumericLimits"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItem"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItem"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#ScoreConstraints",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#ScoreConstraints",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItem"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#NumericLimits"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultAgent"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultScore"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#gradedBy"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#comment"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#Result",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/JSON_LD_CONTEXT.json:    "exp" : "http://pseudopurl.kinexis.com/vocab/caliper/v1/core#",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/JSON_LD_CONTEXT.json:    "liso" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/JSON_LD_CONTEXT.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lis/v2/LineItem/JSON_LD_CONTEXT.json:  "@id" : "http://pseudopurl.kinexis.com/ctx/lis/v2/LineItem"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:    "ci" : "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:    "exp" : "http://pseudopurl.kinexis.com/vocab/caliper/v1/core#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:    "liso" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:    "lisp" : "http://pseudopurl.kinexis.com/vocab/lis/v2/pm#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:    "ltic" : "http://pseudopurl.kinexis.com/vocab/lti/v2/capability#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:    "ltiv" : "http://pseudopurl.kinexis.com/vocab/lti/v2/variable#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/caliper/v1/core#activity_id",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#context_id",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#lineItem"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#assignedActivity",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#results",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#reportingMethod",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#scoreConstraints",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:            "allValuesFrom" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Context"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#ScoreConstraints"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#normalMaximum",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#totalMaximum",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#extraCreditMaximum",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:            "allValuesFrom" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItem"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/caliper/v1/core#Activity"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/caliper/v1/core#Activity",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItem"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Context"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#NumericLimits"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItem",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Context"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#NumericLimits"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItem"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItem"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#ScoreConstraints",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItem"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#NumericLimits"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/JSON_LD_CONTEXT.json:    "ci" : "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/JSON_LD_CONTEXT.json:    "exp" : "http://pseudopurl.kinexis.com/vocab/caliper/v1/core#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/JSON_LD_CONTEXT.json:    "liso" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/JSON_LD_CONTEXT.json:    "lisp" : "http://pseudopurl.kinexis.com/vocab/lis/v2/pm#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/JSON_LD_CONTEXT.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/JSON_LD_CONTEXT.json:    "ltic" : "http://pseudopurl.kinexis.com/vocab/lti/v2/capability#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/JSON_LD_CONTEXT.json:    "ltiv" : "http://pseudopurl.kinexis.com/vocab/lti/v2/variable#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer/JSON_LD_CONTEXT.json:  "@id" : "http://pseudopurl.kinexis.com/ctx/lis/v2/outcomes/LineItemContainer"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:    "ci" : "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:    "exp" : "http://pseudopurl.kinexis.com/vocab/caliper/v1/core#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:    "liso" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:    "lisp" : "http://pseudopurl.kinexis.com/vocab/lis/v2/pm#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:    "lti-type" : "http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:    "ltic" : "http://pseudopurl.kinexis.com/vocab/lti/v2/capability#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:    "ltiv" : "http://pseudopurl.kinexis.com/vocab/lti/v2/variable#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#sourcedId"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#context_id",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#lineItems"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#lineItem"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#timestamp"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultScoreConstraints",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultStatus",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#totalScore",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultOf",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#normalScore",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#penaltyScore",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#extraCreditScore",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#result"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "allValuesFrom" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Context"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#ScoreConstraints"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#normalMaximum",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#totalMaximum",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#extraCreditMaximum",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "allValuesFrom" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItem"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Context"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#NumericLimits"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItem",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Context"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItemContainer",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Context"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#NumericLimits"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItem"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#ScoreConstraints",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Context"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#NumericLimits"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lis/v2/pm#Person",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultScore"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultAgent"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#gradedBy"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#comment"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#Result",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/JSON_LD_CONTEXT.json:    "ci" : "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/JSON_LD_CONTEXT.json:    "exp" : "http://pseudopurl.kinexis.com/vocab/caliper/v1/core#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/JSON_LD_CONTEXT.json:    "liso" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/JSON_LD_CONTEXT.json:    "lisp" : "http://pseudopurl.kinexis.com/vocab/lis/v2/pm#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/JSON_LD_CONTEXT.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/JSON_LD_CONTEXT.json:    "lti-type" : "http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/JSON_LD_CONTEXT.json:    "ltic" : "http://pseudopurl.kinexis.com/vocab/lti/v2/capability#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/JSON_LD_CONTEXT.json:    "ltiv" : "http://pseudopurl.kinexis.com/vocab/lti/v2/variable#",
+repo/purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer/JSON_LD_CONTEXT.json:  "@id" : "http://pseudopurl.kinexis.com/ctx/lis/v2/outcomes/ResultContainer"
+repo/purl.imsglobal.org/ctx/lis/v2/Result/ENHANCED_CONTEXT.json:    "liso" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#",
+repo/purl.imsglobal.org/ctx/lis/v2/Result/ENHANCED_CONTEXT.json:    "lisp" : "http://pseudopurl.kinexis.com/vocab/lis/v2/pm#",
+repo/purl.imsglobal.org/ctx/lis/v2/Result/ENHANCED_CONTEXT.json:    "lti-type" : "http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#",
+repo/purl.imsglobal.org/ctx/lis/v2/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/Result/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult",
+repo/purl.imsglobal.org/ctx/lis/v2/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultScore"
+repo/purl.imsglobal.org/ctx/lis/v2/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultAgent"
+repo/purl.imsglobal.org/ctx/lis/v2/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#gradedBy"
+repo/purl.imsglobal.org/ctx/lis/v2/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#comment"
+repo/purl.imsglobal.org/ctx/lis/v2/Result/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult",
+repo/purl.imsglobal.org/ctx/lis/v2/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2/Result/JSON_LD_CONTEXT.json:    "liso" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#",
+repo/purl.imsglobal.org/ctx/lis/v2/Result/JSON_LD_CONTEXT.json:    "lisp" : "http://pseudopurl.kinexis.com/vocab/lis/v2/pm#",
+repo/purl.imsglobal.org/ctx/lis/v2/Result/JSON_LD_CONTEXT.json:    "lti-type" : "http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#",
+repo/purl.imsglobal.org/ctx/lis/v2/Result/JSON_LD_CONTEXT.json:  "@id" : "http://pseudopurl.kinexis.com/ctx/lis/v2/Result"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:    "ci" : "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:    "exp" : "http://pseudopurl.kinexis.com/vocab/caliper/v1/core#",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:    "liso" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:    "lisp" : "http://pseudopurl.kinexis.com/vocab/lis/v2/pm#",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:    "lti-type" : "http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:    "ltic" : "http://pseudopurl.kinexis.com/vocab/lti/v2/capability#",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:    "ltiv" : "http://pseudopurl.kinexis.com/vocab/lti/v2/variable#",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#timestamp"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultScoreConstraints",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultStatus",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultOf",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#totalScore",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#normalScore",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#penaltyScore",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#extraCreditScore",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#ScoreConstraints"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#normalMaximum",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#totalMaximum",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#extraCreditMaximum",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#NumericLimits"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#NumericLimits"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#ScoreConstraints",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#NumericLimits"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lis/v2/pm#Person",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultScore"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultAgent"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#gradedBy"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#comment"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#Result",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult"
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/JSON_LD_CONTEXT.json:    "ci" : "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/JSON_LD_CONTEXT.json:    "exp" : "http://pseudopurl.kinexis.com/vocab/caliper/v1/core#",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/JSON_LD_CONTEXT.json:    "liso" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/JSON_LD_CONTEXT.json:    "lisp" : "http://pseudopurl.kinexis.com/vocab/lis/v2/pm#",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/JSON_LD_CONTEXT.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/JSON_LD_CONTEXT.json:    "lti-type" : "http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/JSON_LD_CONTEXT.json:    "ltic" : "http://pseudopurl.kinexis.com/vocab/lti/v2/capability#",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/JSON_LD_CONTEXT.json:    "ltiv" : "http://pseudopurl.kinexis.com/vocab/lti/v2/variable#",
+repo/purl.imsglobal.org/ctx/lis/v2p1/Result/JSON_LD_CONTEXT.json:  "@id" : "http://pseudopurl.kinexis.com/ctx/lis/v2p1/Result"
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:    "ci" : "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:    "exp" : "http://pseudopurl.kinexis.com/vocab/caliper/v1/core#",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:    "liso" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:    "lisp" : "http://pseudopurl.kinexis.com/vocab/lis/v2/pm#",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:    "ltic" : "http://pseudopurl.kinexis.com/vocab/lti/v2/capability#",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:    "ltiv" : "http://pseudopurl.kinexis.com/vocab/lti/v2/variable#",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LtiLink"
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#linkLineItem"
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#AssignmentLink"
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LtiLink",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#ContentItem",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer"
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#ContentItem",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#FileItem",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#ContentItem"
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProxyBinding",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer"
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProxy",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer"
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/JSON_LD_CONTEXT.json:    "ci" : "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/JSON_LD_CONTEXT.json:    "exp" : "http://pseudopurl.kinexis.com/vocab/caliper/v1/core#",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/JSON_LD_CONTEXT.json:    "liso" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/JSON_LD_CONTEXT.json:    "lisp" : "http://pseudopurl.kinexis.com/vocab/lis/v2/pm#",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/JSON_LD_CONTEXT.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/JSON_LD_CONTEXT.json:    "ltic" : "http://pseudopurl.kinexis.com/vocab/lti/v2/capability#",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/JSON_LD_CONTEXT.json:    "ltiv" : "http://pseudopurl.kinexis.com/vocab/lti/v2/variable#",
+repo/purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init/JSON_LD_CONTEXT.json:  "@id" : "http://pseudopurl.kinexis.com/ctx/lti/v2/AssignmentLink.init"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:    "lti-type" : "http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:    "ltic" : "http://pseudopurl.kinexis.com/vocab/lti/v2/capability#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:    "ltiv" : "http://pseudopurl.kinexis.com/vocab/lti/v2/variable#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#email",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#key",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#default_value",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "allValuesFrom" : "http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#LongName.Type"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#key",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#default_value",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "allValuesFrom" : "http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#Text.Type"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#HasCode"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#vendor",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#product_name",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#product_family",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#technical_description",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#description",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#product_version",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#guid",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#service_owner",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#service_provider",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#product_info",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#support",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceDescriptor"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#format",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#endpoint",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#action",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#timestamp",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#description"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#service_owner_name",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#guid",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#timestamp",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#service_provider_name",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#description",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#support",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductProfile"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#guid",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#capability_offered"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#HasCode"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#timestamp",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#contact",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#vendor_name",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#website",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#description",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#RestServiceProfile",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#RestService"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolConsumerProfile"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#HasCode"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Contact",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Vendor"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedName",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedText",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ShortLocalizedName"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedText",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProvider",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInfo",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ResourceHandler",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Vendor",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceOwner"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Contact"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#RestService"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#RestService"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProvider",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolConsumerProfile",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInstance"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#IconInfo",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedName",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedText",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ShortLocalizedName"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductProfile",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProxy"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductFamily",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInfo"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInfo",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInstance"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInstance",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductProfile"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedName",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInfo"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInfo"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceDescriptor",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductProfile"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceOwner",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInstance"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedName",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceOwner"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProvider",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInstance"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedName",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProvider"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Contact",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProvider",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInstance"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedText",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInfo"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProvider",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Vendor",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceOwner"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Vendor",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductFamily"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedName",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Vendor"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Vendor"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:    "GET" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#GET",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:    "POST" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#POST",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Variable",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Capability"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/capability#OutcomesCapability",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Capability"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#MessageType",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Capability"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#HasCode",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#code"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ResourceType",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#HasCode"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductProfile",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#product_instance"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#lti_version"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProfile",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductProfile"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/JSON_LD_CONTEXT.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/JSON_LD_CONTEXT.json:    "lti-type" : "http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/JSON_LD_CONTEXT.json:    "ltic" : "http://pseudopurl.kinexis.com/vocab/lti/v2/capability#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/JSON_LD_CONTEXT.json:    "ltiv" : "http://pseudopurl.kinexis.com/vocab/lti/v2/variable#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/JSON_LD_CONTEXT.json:    "GET" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#GET",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/JSON_LD_CONTEXT.json:    "POST" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#POST",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolConsumerProfile/JSON_LD_CONTEXT.json:  "@id" : "http://pseudopurl.kinexis.com/ctx/lti/v2/ToolConsumerProfile"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:    "lti-type" : "http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:    "ltic" : "http://pseudopurl.kinexis.com/vocab/lti/v2/capability#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:    "ltiv" : "http://pseudopurl.kinexis.com/vocab/lti/v2/variable#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#selector",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#secure_base_url",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#default_base_url",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#applies_to",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#email",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Endpoint"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#default_location",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#key",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#icon_style"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#key",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#default_value",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "allValuesFrom" : "http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#LongName.Type"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#key",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#default_value",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "allValuesFrom" : "http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#Text.Type"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Endpoint"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#enabled_capability"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#message_type",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#parameter"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Capability"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#variable",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#name",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#fixed",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#HasCode"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#vendor",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#product_name",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#product_family",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#technical_description",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#description",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#product_version",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#guid",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#service_owner",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#service_provider",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#product_info",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#support",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#description"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#resource_type",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#icon_info"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#message",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#resource_name",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#HasCode"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceDescriptor"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#format",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#endpoint",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#action",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProfile"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#action",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#tool_service"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#shared_secret",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#end_user_service"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#timestamp",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#description"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#service_owner_name",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#service",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#guid",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#timestamp",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#service_provider_name",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#description",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#support",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductProfile"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#guid",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductProfile"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#base_url_choice",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#tool_proxy_guid",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#tool_profile",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#lti_version",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#tool_consumer_profile",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#security_contract",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#HasCode"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#timestamp",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#contact",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#vendor_name",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#website",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#description",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#RestServiceProfile",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#RestService"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#BaseUrlSelector"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#BaseUrlChoice",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProfile"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#HasCode"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Contact",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Vendor"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#PropertyMap",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#BaseUrlChoice"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#IconEndpoint",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#IconInfo"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedName",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedText",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ShortLocalizedName"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedText",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProvider",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInfo",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ResourceHandler",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Vendor",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceOwner"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Contact"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#MessageHandler",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProxy"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProfile",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#SecurityContract"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#RestService"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Parameter"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#RestService"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProvider",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolConsumerProfile",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInstance"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#IconInfo",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ResourceHandler"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#IconInfo"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#IconInfo",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedName",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedText",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ShortLocalizedName"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductProfile",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProxy"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#MessageHandler",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProfile",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ResourceHandler"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#MessageHandler"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Parameter"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Parameter",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#MessageHandler"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Endpoint"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductFamily",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInfo"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInfo",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInstance"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInstance",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductProfile"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedName",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInfo"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInfo"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ResourceHandler",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProfile"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedName",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ResourceHandler"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ResourceType",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ResourceHandler"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#BaseUrlChoice"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#SecurityContract",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProxy"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#BaseUrlSelector",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#BaseUrlChoice"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProfile"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceDescriptor",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductProfile"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceOwner",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInstance"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedName",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceOwner"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProvider",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInstance"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedName",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProvider"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#SecurityContract"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Contact",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProvider",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInstance"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedText",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInfo"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProvider",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Vendor",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceOwner"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProxy"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProfile",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProxy"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProxy"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProfile",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#SecurityContract"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Parameter"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Vendor",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductFamily"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedName",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Vendor"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Vendor"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:    "GET" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#GET",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:    "POST" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#POST",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Variable",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Capability"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/capability#OutcomesCapability",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Capability"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Endpoint",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#path"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#HasCode",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#code"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductProfile",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#product_instance"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#lti_version"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#custom_url"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#custom"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LtiLink",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#ContentItem"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#AssignmentLink",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LtiLink"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#ContentItem",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProxyBinding",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxy.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/ENHANCED_CONTEXT.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/ENHANCED_CONTEXT.json:    "lti-type" : "http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#tool_proxy_guid",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProxy"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#custom_url"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LtiLink",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#ContentItem"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#AssignmentLink",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LtiLink"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#ContentItem",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProxyBinding",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/JSON_LD_CONTEXT.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/JSON_LD_CONTEXT.json:    "lti-type" : "http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxyId/JSON_LD_CONTEXT.json:  "@id" : "http://pseudopurl.kinexis.com/ctx/lti/v2/ToolProxyId"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxys.folder/JSON_LD_CONTEXT.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxys.folder/JSON_LD_CONTEXT.json:    "lti-type" : "http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxys.folder/JSON_LD_CONTEXT.json:    "ltic" : "http://pseudopurl.kinexis.com/vocab/lti/v2/capability#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxys.folder/JSON_LD_CONTEXT.json:    "ltiv" : "http://pseudopurl.kinexis.com/vocab/lti/v2/variable#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxys.folder/JSON_LD_CONTEXT.json:    "GET" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#GET",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxys.folder/JSON_LD_CONTEXT.json:    "POST" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#POST",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolProxys.folder/JSON_LD_CONTEXT.json:  "@id" : "http://pseudopurl.kinexis.com/ctx/lti/v2/ToolProxy"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolSettings/ENHANCED_CONTEXT.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolSettings/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LtiLink"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolSettings/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#ContentItem",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolSettings/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolSettings/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolSettings/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolSettings/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#custom_url",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolSettings/ENHANCED_CONTEXT.json:            "onProperty" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#custom",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolSettings/ENHANCED_CONTEXT.json:      "@type" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#PropertyMap",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolSettings/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolSettings/ENHANCED_CONTEXT.json:          "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer"
+repo/purl.imsglobal.org/ctx/lti/v2/ToolSettings/ENHANCED_CONTEXT.json:      "@id" : "http://pseudopurl.kinexis.com/vocab/lti/v1/ci#ContentItem",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolSettings/JSON_LD_CONTEXT.json:    "lti" : "http://pseudopurl.kinexis.com/vocab/lti/v2/lti#",
+repo/purl.imsglobal.org/ctx/lti/v2/ToolSettings/JSON_LD_CONTEXT.json:  "@id" : "http://pseudopurl.kinexis.com/ctx/lti/v2/ToolSettings"
+repo/purl.imsglobal.org/vocab/caliper/v1/core/exp.ttl:@prefix exp: <http://pseudopurl.kinexis.com/vocab/caliper/v1/core#> .
+repo/purl.imsglobal.org/vocab/caliper/v1/core/exp.ttl:@base <http://pseudopurl.kinexis.com/vocab/caliper/v1/core#> .
+repo/purl.imsglobal.org/vocab/caliper/v1/core/exp.ttl:<http://pseudopurl.kinexis.com/vocab/caliper/v1/core#> rdf:type owl:Ontology ;
+repo/purl.imsglobal.org/vocab/caliper/v1/core/exp.ttl:###  http://pseudopurl.kinexis.com/vocab/caliper/v1/core#activityTemplate
+repo/purl.imsglobal.org/vocab/caliper/v1/core/exp.ttl:###  http://pseudopurl.kinexis.com/vocab/caliper/v1/core#activity_id
+repo/purl.imsglobal.org/vocab/caliper/v1/core/exp.ttl:###  http://pseudopurl.kinexis.com/vocab/caliper/v1/core#Activity
+repo/purl.imsglobal.org/vocab/caliper/v1/core/exp.ttl:###  http://pseudopurl.kinexis.com/vocab/caliper/v1/core#
+repo/purl.imsglobal.org/vocab/caliper/v1/core/exp.ttl:<http://pseudopurl.kinexis.com/vocab/caliper/v1/core#> rdf:type bind:TargetNamespace ,
+repo/purl.imsglobal.org/vocab/lis/v2/liso:@prefix exp: <http://pseudopurl.kinexis.com/vocab/caliper/v1/core#> .
+repo/purl.imsglobal.org/vocab/lis/v2/liso:@prefix lti: <http://pseudopurl.kinexis.com/vocab/lti/v2/lti#> .
+repo/purl.imsglobal.org/vocab/lis/v2/liso:@prefix liso: <http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#> .
+repo/purl.imsglobal.org/vocab/lis/v2/liso:@prefix lti-type: <http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#> .
+repo/purl.imsglobal.org/vocab/lis/v2/liso:@base <http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#> .
+repo/purl.imsglobal.org/vocab/lis/v2/liso:<http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#> rdf:type owl:Ontology ;
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#assignedActivity
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#comment
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#dataSource
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#gradedBy
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#lineItemOf
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#reportingMethod
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#result
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultAgent
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultOf
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultScoreConstraints
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultStatus
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#results
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#scoreConstraints
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#lineItem
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#extraCreditMaximum
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#extraCreditScore
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#normalMaximum
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#normalScore
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#penaltyScore
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#resultScore
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#timestamp
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#totalMaximum
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#totalScore
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/caliper/v1/core#Activity
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AbstractResult
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#AssignmentAdministration
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LISResult
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItem
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItemContainer
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#NumericLimits
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#Result
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#ResultContainer
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#ResultStatus
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#ScoreConstraints
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Context
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#DataValue.Type
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#
+repo/purl.imsglobal.org/vocab/lis/v2/liso:<http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#> rdf:type bind:TargetNamespace ,
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#Completed
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#Final
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#Initialized
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#Started
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#result
+repo/purl.imsglobal.org/vocab/lis/v2/liso:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#lineItem
+repo/purl.imsglobal.org/vocab/lis/v2/mm:@prefix lism: <http://pseudopurl.kinexis.com/vocab/lis/v2/mm#> .
+repo/purl.imsglobal.org/vocab/lis/v2/mm:@prefix lisp: <http://pseudopurl.kinexis.com/vocab/lis/v2/pm#> .
+repo/purl.imsglobal.org/vocab/lis/v2/mm:@base <http://pseudopurl.kinexis.com/vocab/lis/v2/mm#> .
+repo/purl.imsglobal.org/vocab/lis/v2/mm:<http://pseudopurl.kinexis.com/vocab/lis/v2/mm#> rdf:type owl:Ontology ;
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#ExternalInstructor
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#ExternalLearner
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#GuestInstructor
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#GuestLearner
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#Instructor
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#Learner
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#Lecturer
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#NonCreditLearner
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#PrimaryInstructor
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#SecondaryInstructor
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#membership
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#LISMembership
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#LISMembershipContainer
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#LISRole
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/pm#LISPerson
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#
+repo/purl.imsglobal.org/vocab/lis/v2/mm:<http://pseudopurl.kinexis.com/vocab/lis/v2/mm#> rdf:type bind:TargetNamespace ,
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#Instructor
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#Learner
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#TeachingAssistant
+repo/purl.imsglobal.org/vocab/lis/v2/mm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#membership
+repo/purl.imsglobal.org/vocab/lis/v2/pm:@prefix lism: <http://pseudopurl.kinexis.com/vocab/lis/v2/mm#> .
+repo/purl.imsglobal.org/vocab/lis/v2/pm:@prefix lisp: <http://pseudopurl.kinexis.com/vocab/lis/v2/pm#> .
+repo/purl.imsglobal.org/vocab/lis/v2/pm:@base <http://pseudopurl.kinexis.com/vocab/lis/v2/pm#> .
+repo/purl.imsglobal.org/vocab/lis/v2/pm:<http://pseudopurl.kinexis.com/vocab/lis/v2/pm#> rdf:type owl:Ontology ;
+repo/purl.imsglobal.org/vocab/lis/v2/pm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/pm#email
+repo/purl.imsglobal.org/vocab/lis/v2/pm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/pm#resultSourcedId
+repo/purl.imsglobal.org/vocab/lis/v2/pm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/pm#sourcedId
+repo/purl.imsglobal.org/vocab/lis/v2/pm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/pm#user_id
+repo/purl.imsglobal.org/vocab/lis/v2/pm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#LISMembership
+repo/purl.imsglobal.org/vocab/lis/v2/pm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/pm#LISPerson
+repo/purl.imsglobal.org/vocab/lis/v2/pm:###  http://pseudopurl.kinexis.com/vocab/lis/v2/pm#
+repo/purl.imsglobal.org/vocab/lis/v2/pm:<http://pseudopurl.kinexis.com/vocab/lis/v2/pm#> rdf:type bind:TargetNamespace ,
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:@prefix ci: <http://pseudopurl.kinexis.com/vocab/lti/v1/ci#> .
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:@prefix lti: <http://pseudopurl.kinexis.com/vocab/lti/v2/lti#> .
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:@base <http://pseudopurl.kinexis.com/vocab/lti/v1/ci#> .
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:<http://pseudopurl.kinexis.com/vocab/lti/v1/ci#> rdf:type owl:Ontology ;
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#icon
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#placementOf
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#presentation_document_target
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#thumbnail
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#copyAdvice
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#displayHeight
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#displayWidth
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#expiresAt
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#height
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#mediaType
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#text
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#title
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#width
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#windowTarget
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#ContentItem
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#ContentItemPlacement
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#FileItem
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#Image
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#DocumentTarget
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#
+repo/purl.imsglobal.org/vocab/lti/v1/ci.ttl:<http://pseudopurl.kinexis.com/vocab/lti/v1/ci#> rdf:type bind:TargetNamespace ,
+repo/purl.imsglobal.org/vocab/lti/v2/capability.ttl:@prefix lti: <http://pseudopurl.kinexis.com/vocab/lti/v2/lti#> .
+repo/purl.imsglobal.org/vocab/lti/v2/capability.ttl:@prefix ltic: <http://pseudopurl.kinexis.com/vocab/lti/v2/capability#> .
+repo/purl.imsglobal.org/vocab/lti/v2/capability.ttl:@base <http://pseudopurl.kinexis.com/vocab/lti/v2/capability#> .
+repo/purl.imsglobal.org/vocab/lti/v2/capability.ttl:<http://pseudopurl.kinexis.com/vocab/lti/v2/capability#> rdf:type owl:Ontology ;
+repo/purl.imsglobal.org/vocab/lti/v2/capability.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/capability#OutcomesCapability
+repo/purl.imsglobal.org/vocab/lti/v2/capability.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Capability
+repo/purl.imsglobal.org/vocab/lti/v2/capability.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/capability#
+repo/purl.imsglobal.org/vocab/lti/v2/capability.ttl:<http://pseudopurl.kinexis.com/vocab/lti/v2/capability#> rdf:type bind:TargetNamespace ,
+repo/purl.imsglobal.org/vocab/lti/v2/capability.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/capability#Result.autocreate
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:@prefix ci: <http://pseudopurl.kinexis.com/vocab/lti/v1/ci#> .
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:@prefix lti: <http://pseudopurl.kinexis.com/vocab/lti/v2/lti#> .
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:@prefix liso: <http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#> .
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:@prefix lti-type: <http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#> .
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:@base <http://pseudopurl.kinexis.com/vocab/lti/v2/lti#> .
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:<http://pseudopurl.kinexis.com/vocab/lti/v2/lti#> rdf:type owl:Ontology ;
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#lineItemOf
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#action
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#applies_to
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#base_url_choice
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#capability_offered
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#code
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#contact
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#context
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#context_lineitems
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#custom
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#default_location
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#default_value
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#description
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#email
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#enabled_capability
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#end_user_service
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#fixed
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#guid
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#http_method
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#icon_info
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#icon_style
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#instance
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#key
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#latestResult
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#lineItem
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#lineItems
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#linkCapability
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#linkLineItem
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#linkLineItem_results
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#lti_version
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#message
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#message_class
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#message_type
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#parameter
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#product
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#product_family
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#product_info
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#product_instance
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#product_name
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#product_version
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#profile
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#resource_handler
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#resource_link_id
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#resource_name
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#resource_type
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#resource_type_owner
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#security_contract
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#selector
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#service
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#service_offered
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#service_owner
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#service_owner_name
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#service_provider
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#service_provider_name
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#support
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#technical_description
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#tool_consumer_profile
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#tool_profile
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#tool_proxy_guid
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#tool_service
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#variable
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#vendor
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#vendor_name
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#version
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#absolute_path_allowed
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#context_id
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#custom_url
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#default_base_url
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#endpoint
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#format
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#name
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#path
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#secure_base_url
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#shared_secret
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#sourcedId
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#timestamp
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#website
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItem
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#LineItemContainer
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#Result
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#ResultContainer
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v1/ci#ContentItem
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#AssignmentLink
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#BaseUrlChoice
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#BaseUrlSelector
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Capability
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Contact
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Context
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#DocumentTarget
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Endpoint
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#HasCode
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#HttpMethod
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#IconEndpoint
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#IconInfo
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#IconStyle
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedName
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LocalizedText
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#LtiLink
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#MessageHandler
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#MessageType
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Parameter
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductFamily
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInfo
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductInstance
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ProductProfile
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#PropertyMap
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ResourceHandler
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ResourceType
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#RestService
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#RestServiceProfile
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#SecurityContract
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceDescriptor
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceOwner
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProfile
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ServiceProvider
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ShortLocalizedName
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolConsumerProfile
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProfile
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProxy
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolProxyBinding
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#ToolSettingsContainer
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Vendor
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#DataValue.Type
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#GUID.Type
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#LongName.Type
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#Name.Type
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#ShortName.Type
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#Text.Type
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#Token.Type
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#VariableName.Type
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:<http://pseudopurl.kinexis.com/vocab/lti/v2/lti#> rdf:type bind:TargetNamespace ,
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#GET
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#POST
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#embed
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#frame
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#iframe
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#overlay
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#popup
+repo/purl.imsglobal.org/vocab/lti/v2/lti.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#window
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:@prefix lti: <http://pseudopurl.kinexis.com/vocab/lti/v2/lti#> .
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:@prefix ltiv: <http://pseudopurl.kinexis.com/vocab/lti/v2/variable#> .
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:@base <http://pseudopurl.kinexis.com/vocab/lti/v2/variable#> .
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:<http://pseudopurl.kinexis.com/vocab/lti/v2/variable#> rdf:type owl:Ontology ;
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/lti#Capability
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Variable
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:<http://pseudopurl.kinexis.com/vocab/lti/v2/variable#> rdf:type bind:TargetNamespace ,
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Context.org
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseOffering.academicSession
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseOffering.credits
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseOffering.label
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseOffering.longDescription
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseOffering.shortDescription
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseOffering.sourcedId
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseOffering.title
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseSection.courseNumber
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseSection.credits
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseSection.dataSource
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseSection.dept
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseSection.enrollControl.allowed
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseSection.enrollControll.accept
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseSection.label
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseSection.longDescription
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseSection.maxNumberofStudents
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseSection.numberofStudents
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseSection.shortDescription
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseSection.sourceSectionId
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseSection.sourcedId
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseSection.timeFrame.begin
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseSection.timeFrame.end
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseSection.title
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseTemplate.courseNumber
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseTemplate.credits
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseTemplate.label
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseTemplate.longDescription
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseTemplate.shortDescription
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseTemplate.sourcedId
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#CourseTemplate.title
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Group.email
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Group.enrollControl.accept
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Group.enrollControl.allowed
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Group.grouptype
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Group.longDescription
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Group.parentId
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Group.shortDescription
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Group.sourcedId
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Group.timeFrame.begin
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Group.timeFrame.end
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Group.url
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#LineItem.dataSource
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#LineItem.resultValue.max
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#LineItem.sourcedId
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#LineItem.type
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#LineItem.type.displayName
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#LtiLink.custom.url
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Membership.collectionSourcedId
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Membership.createdTimestamp
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Membership.dataSource
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Membership.personSourcedId
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Membership.role
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Membership.sourcedId
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Membership.status
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.address.country
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.address.locality
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.address.postcode
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.address.statepr
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.address.street1
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.address.street2
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.address.street3
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.address.street4
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.address.timezone
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.email.personal
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.email.primary
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.name.family
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.name.full
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.name.given
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.name.middle
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.name.prefix
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.name.suffix
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.phone.home
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.phone.mobile
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.phone.primary
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.phone.work
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.sms
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.sourcedId
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Person.webaddress
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#ResourceLink.description
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#ResourceLink.title
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Result.comment
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Result.createdTimestamp
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Result.dataSource
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Result.resultScore
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Result.sourcedId
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Result.status
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#Result.url
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#ToolProxy.custom.url
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#ToolProxyBinding.custom.url
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#User.id
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#User.image
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#User.org
+repo/purl.imsglobal.org/vocab/lti/v2/variable.ttl:###  http://pseudopurl.kinexis.com/vocab/lti/v2/variable#User.username
+repo/purl.imsglobal.org/xsd/lti/v2/ltid/XSD.xsd:  xmlns="http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#"
+repo/purl.imsglobal.org/xsd/lti/v2/ltid/XSD.xsd:  targetNamespace="http://pseudopurl.kinexis.com/xsd/lti/v2/ltid#"

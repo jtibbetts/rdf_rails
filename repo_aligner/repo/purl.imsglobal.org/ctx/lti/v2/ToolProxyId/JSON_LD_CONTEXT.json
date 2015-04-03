@@ -1,0 +1,18 @@
+{
+  "@context" : {
+    "lti" : "http://purl.imsglobal.org/vocab/lti/v2/lti#",
+    "lti-type" : "http://purl.imsglobal.org/xsd/lti/v2/ltid#",
+    "xs" : "http://www.w3.org/2001/XMLSchema#",
+    "GUID.Type" : "lti-type:GUID.Type",
+    "ToolProxy" : "lti:ToolProxy",
+    "custom_url" : {
+      "@id" : "lti:custom_url",
+      "@type" : "xs:anyURI"
+    },
+    "tool_proxy_guid" : {
+      "@id" : "lti:tool_proxy_guid",
+      "@type" : "lti-type:GUID.Type"
+    }
+  },
+  "@id" : "http://purl.imsglobal.org/ctx/lti/v2/ToolProxyId"
+}

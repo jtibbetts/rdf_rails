@@ -1,0 +1,308 @@
+@prefix : <http://www.semanticweb.org/owl/owlapi/turtle#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bind: <http://purl.org/semantictools/v1/vocab/bind#> .
+@prefix lism: <http://pseudopurl.kinexis.com/vocab/lis/v2/mm#> .
+@prefix lisp: <http://pseudopurl.kinexis.com/vocab/lis/v2/pm#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann#> .
+@base <http://pseudopurl.kinexis.com/vocab/lis/v2/mm#> .
+
+<http://pseudopurl.kinexis.com/vocab/lis/v2/mm#> rdf:type owl:Ontology ;
+                                                       
+                                                       rdfs:label "LIS Membership Management" ;
+                                                       
+                                                       bind:suggestedPrefix "lism" .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#ExternalInstructor
+
+lism:ExternalInstructor rdf:type owl:AnnotationProperty ;
+                        
+                        rdfs:subPropertyOf lism:Instructor .
+
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#ExternalLearner
+
+lism:ExternalLearner rdf:type owl:AnnotationProperty ;
+                     
+                     rdfs:subPropertyOf lism:Learner .
+
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#GuestInstructor
+
+lism:GuestInstructor rdf:type owl:AnnotationProperty ;
+                     
+                     rdfs:subPropertyOf lism:Instructor .
+
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#GuestLearner
+
+lism:GuestLearner rdf:type owl:AnnotationProperty ;
+                  
+                  rdfs:subPropertyOf lism:Learner .
+
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#Instructor
+
+lism:Instructor rdf:type owl:AnnotationProperty .
+
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#Learner
+
+lism:Learner rdf:type owl:AnnotationProperty .
+
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#Lecturer
+
+lism:Lecturer rdf:type owl:AnnotationProperty ;
+              
+              rdfs:subPropertyOf lism:Instructor .
+
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#NonCreditLearner
+
+lism:NonCreditLearner rdf:type owl:AnnotationProperty ;
+                      
+                      rdfs:subPropertyOf lism:Learner .
+
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#PrimaryInstructor
+
+lism:PrimaryInstructor rdf:type owl:AnnotationProperty ;
+                       
+                       rdfs:subPropertyOf lism:Instructor .
+
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#SecondaryInstructor
+
+lism:SecondaryInstructor rdf:type owl:AnnotationProperty ;
+                         
+                         rdfs:subPropertyOf lism:Instructor .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#membership
+
+lism:membership rdf:type owl:ObjectProperty ;
+                
+                rdfs:comment "A membership entity that records the role of some Person within this Organization." ;
+                
+                rdfs:range org:Membership ;
+                
+                rdfs:domain org:Organization ;
+                
+                owl:inverseOf org:organization .
+
+
+
+###  http://www.w3.org/ns/ldp#membershipPredicate
+
+ldp:membershipPredicate rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/ns/ldp#membershipSubject
+
+ldp:membershipSubject rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/ns/org#member
+
+org:member rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/ns/org#organization
+
+org:organization rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/ns/org#role
+
+org:role rdf:type owl:ObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#LISMembership
+
+lism:LISMembership rdf:type owl:Class ;
+                   
+                   rdfs:subClassOf org:Membership ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty org:member ;
+                                     owl:allValuesFrom lisp:LISPerson
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty org:organization ;
+                                     owl:allValuesFrom org:Organization
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty org:role ;
+                                     owl:allValuesFrom lism:LISRole
+                                   ] ;
+                   
+                   rdfs:comment """<code>LISMembership</code> is a specialized form of the W3C <code>Membership</code> class. It has the following restrictions:
+<UL>
+<LI> The agent must be an LISPerson with maximum cardinality 1.
+<LI> The organization has maximum cardinality 1.
+<LI> The role must be an LISRole with maximum cardinality 1.
+</UL>
+If a Person has more than one role within an Organization, then that person will have multiple LISMemberships linking that Person to the Organization, each with a different role.""" .
+
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#LISMembershipContainer
+
+lism:LISMembershipContainer rdf:type owl:Class ;
+                            
+                            rdfs:subClassOf ldp:Container ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty ldp:membershipPredicate ;
+                                              owl:hasValue lism:membership
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty ldp:membershipSubject ;
+                                              owl:allValuesFrom org:Organization
+                                            ] ;
+                            
+                            rdfs:comment "A container that holds a collection of Membership resources." .
+
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#LISRole
+
+lism:LISRole rdf:type owl:Class ;
+             
+             rdfs:subClassOf org:Role ;
+             
+             rdfs:comment "A Role that is also a Property whose domain is restricted to the Organization class and whose range is restricted to the Person class." .
+
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/pm#LISPerson
+
+lisp:LISPerson rdf:type owl:Class .
+
+
+
+###  http://purl.org/semantictools/v1/vocab/bind#TargetNamespace
+
+bind:TargetNamespace rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/ns/ldp#Container
+
+ldp:Container rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/ns/org#Membership
+
+org:Membership rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/ns/org#Organization
+
+org:Organization rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/ns/org#Role
+
+org:Role rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#
+
+<http://pseudopurl.kinexis.com/vocab/lis/v2/mm#> rdf:type bind:TargetNamespace ,
+                                                                owl:NamedIndividual .
+
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#Instructor
+
+lism:Instructor rdf:type lism:LISRole ,
+                         owl:NamedIndividual .
+
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#Learner
+
+lism:Learner rdf:type lism:LISRole ,
+                      owl:NamedIndividual .
+
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#TeachingAssistant
+
+lism:TeachingAssistant rdf:type lism:LISRole ,
+                                owl:NamedIndividual .
+
+
+
+###  http://pseudopurl.kinexis.com/vocab/lis/v2/mm#membership
+
+lism:membership rdfs:comment "A membership entity that records the role of some Person within this Organization." .
+
+
+
+[ rdfs:comment "Indicates the orgination in which the person has a membership."
+] .
+[ rdfs:comment "Indicates the role that the Person has within the Organization."
+] .
+
+###  Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net
+
