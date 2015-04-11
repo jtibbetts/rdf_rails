@@ -1,8 +1,8 @@
 {
   "@context" : [
-    "http://pseudopurl.kinexis.com/ctx/lis/v2p1/Result",
+    "http://purl.kinexis.com/ctx/lis/v2p1/Result",
     {
-      "res" : "http://pseudopurl.kinexis.com/vocab/lis/v2/outcomes#"
+      "res" : "http://purl.kinexis.com/vocab/lis/v2/outcomes#"
     }
   ],
   "@type" : "LISResult",

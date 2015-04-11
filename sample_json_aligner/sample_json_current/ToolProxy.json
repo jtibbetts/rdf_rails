@@ -1,6 +1,6 @@
 {
   "@context" : [
-      "http://pseudopurl.kinexis.com/ctx/lti/v2/ToolProxy",
+      "http://purl.kinexis.com/ctx/lti/v2/ToolProxy",
       "http://purl.org/blackboard/ctx/v1/iconStyle"
   ],
   "@type" : "ToolProxy",

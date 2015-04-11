@@ -1,5 +1,5 @@
 {
-  "@context" : "http://pseudopurl.kinexis.com/lti/v2/ctx/ToolConsumerProfile",
+  "@context" : "http://purl.kinexis.com/lti/v2/ctx/ToolConsumerProfile",
   "@type" : "ToolConsumerProfile",
   "@id" : "http://server.example.com/resources/ToolConsumerProfile/47992",
   "capability" : [ 

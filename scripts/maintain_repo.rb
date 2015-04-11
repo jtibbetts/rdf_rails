@@ -7,7 +7,7 @@ ENV['RAILS_ENV'] ||= 'development'
 require File.expand_path('../../config/environment', __FILE__)
 
 # PSEUDO_PURL = 'http://localhost/purl.imsglobal.org'
-PSEUDO_PURL = 'http://pseudopurl.kinexis.com'
+PSEUDO_PURL = 'http://purl.kinexis.com'
 
 
 def tree_of_paths(ancestor_node)

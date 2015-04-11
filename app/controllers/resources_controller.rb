@@ -5,44 +5,42 @@ class ResourcesController < ApplicationController
 
 
   def show
-
-
+    Rails.logger.info('Resources show')
     # path = params[:anyroute]
     path = env['PATH_INFO']
 
     full_path = File.join(File.expand_path('.'),'repo_aligner','repo','purl.imsglobal.org', path )
 
-    last_zone = full_path.split('/')[-1]
-    zones = last_zone.split('.')
-    extension = (zones.length > 1) ? zones[-1] : nil
+    extension = get_extension(full_path)
 
-    accept_header = ENV['HTTP_ACCEPT']
-
-    if extension.present?
-      # either the html or rdf representation has been asked for directly, so provide it
-      contents = File.open(full_path, 'r') {|f| f.read}
-
-      respond_to do |format|
-        format.html {
-          render html: get_contents(full_path).html_save }
-        format.rdf {
-          render text: get_contents(full_path), content_type: 'application/rdf'}
-        format.ttl {
-          render text: get_contents(full_path), content_type: 'application/turtle'}
-        # an alternative here is to call your own method to output the required RDF as a string
-        # format.rdf {render  :text => my_method_to_make_rdf }
-      end
-
-
-    else
-      # no format (file extension) specified, so the resource identifier has been requested. respond_to will look at HTTP Accept header
-      # and do the appropriate redirect
+    if extension.blank?
       full_file_path = choose_linked_data_file(full_path)
-      resource_web_path = create_resource_web_path(full_file_path, path)
-      redirect_to "#{resource_web_path}", status: 303
-
+      if full_file_path.present?
+        full_path = full_file_path
+        # try again with revised path
+        extension = '.' + get_extension(full_path)
+        Rails.logger.info("Resolving to: #{full_path}")
+      else
+        Rails.logger.info("No such file")
+        (render nothing: 'No such file', status: 404) and return
+      end
     end
 
+    Rails.logger.info("Rendering: #{full_path}")
+    case extension
+      when '.html'
+        render html: get_contents(full_path).html_save
+      when '.rdf'
+        render text: get_contents(full_path), content_type: 'application/rdf'
+      when '.ttl'
+        render text: get_contents(full_path), content_type: 'application/turtle'
+      when '.jsonld'
+        render text: get_contents(full_path), content_type: 'application/ld+json'
+      when '.json'
+        render text: get_contents(full_path), content_type: 'application/json'
+      else
+        render text: 'No matchng RDF file extensions', status: 404
+    end
   end
 
   private
@@ -50,6 +48,7 @@ class ResourcesController < ApplicationController
   def choose_linked_data_file(full_path)
     result = nil
     filemap_by_ext = create_filemap_by_ext(full_path)
+    Rails.logger.info("Choose #{full_path} from #{filemap_by_ext.inspect}")
     if filemap_by_ext.has_key? '.rdf'
       return get_first_file(filemap_by_ext, '.rdf')
     elsif filemap_by_ext.has_key? '.ttl'
@@ -58,6 +57,8 @@ class ResourcesController < ApplicationController
       return get_first_file(filemap_by_ext, '.n3')
     elsif filemap_by_ext.has_key? '.jsonld'
       return get_first_file(filemap_by_ext, '.jsonld')
+    elsif filemap_by_ext.has_key? '.json'
+      return get_first_file(filemap_by_ext, '.json')
     end
   end
 
@@ -88,5 +89,11 @@ class ResourcesController < ApplicationController
   def get_first_file(filemap_by_ext, extension)
     files_by_ext = filemap_by_ext[extension]
     files_by_ext.sort![0]
+  end
+
+  def get_extension(path)
+    last_zone = path.split('/')[-1]
+    zones = last_zone.split('.')
+    extension = (zones.length > 1) ? zones[-1] : nil
   end
 end

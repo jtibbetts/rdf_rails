@@ -5,6 +5,8 @@ gem 'rails', '4.1.6'
 gem 'sqlite3'
 gem 'mysql2', '~> 0.3.13'
 
+gem 'activeadmin', github: 'gregbell/active_admin'
+
 gem 'jquery-ui-rails'
 gem 'jquery-turbolinks'
 
@@ -22,6 +24,7 @@ gem 'rdf'
 gem 'rdf-turtle'
 gem 'json-ld'
 gem 'rdf-rdfxml'
+
 
 group :development, :test do
   gem 'pry'
