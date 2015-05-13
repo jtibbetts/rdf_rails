@@ -31,7 +31,7 @@
     <orderEntry type="library" scope="PROVIDED" name="bond (v0.5.1, rbenv: 2.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bourbon (v4.2.2, rbenv: 2.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.2, rbenv: 2.1.4) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.9.0.rc, rbenv: 2.1.4) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.9.4, rbenv: 2.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="byebug (v4.0.4, rbenv: 2.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coderay (v1.1.0, rbenv: 2.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v4.1.0, rbenv: 2.1.4) [gem]" level="application" />

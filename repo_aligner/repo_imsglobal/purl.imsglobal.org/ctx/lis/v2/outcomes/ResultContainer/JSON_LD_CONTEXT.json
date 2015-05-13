@@ -1,0 +1,118 @@
+{
+  "@context" : {
+    "ci" : "http://purl.imsglobal.org/vocab/lti/v1/ci#",
+    "exp" : "http://purl.imsglobal.org/vocab/caliper/v1/core#",
+    "foaf" : "http://xmlns.com/foaf/0.1#",
+    "ldp" : "http://www.w3.org/ns/ldp#",
+    "liso" : "http://purl.imsglobal.org/vocab/lis/v2/outcomes#",
+    "lisp" : "http://purl.imsglobal.org/vocab/lis/v2/pm#",
+    "lti" : "http://purl.imsglobal.org/vocab/lti/v2/lti#",
+    "lti-type" : "http://purl.imsglobal.org/xsd/lti/v2/ltid#",
+    "ltic" : "http://purl.imsglobal.org/vocab/lti/v2/capability#",
+    "ltiv" : "http://purl.imsglobal.org/vocab/lti/v2/variable#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "xs" : "http://www.w3.org/2001/XMLSchema#",
+    "Agent" : "foaf:Agent",
+    "Container" : "ldp:Container",
+    "Context" : "lti:Context",
+    "DataValue.Type" : "lti-type:DataValue.Type",
+    "LISResult" : "liso:LISResult",
+    "LineItem" : "liso:LineItem",
+    "LineItemContainer" : "liso:LineItemContainer",
+    "Literal" : "rdfs:Literal",
+    "NumericLimits" : "liso:NumericLimits",
+    "Page" : "ldp:Page",
+    "Resource" : "rdfs:Resource",
+    "ResultContainer" : "liso:ResultContainer",
+    "ResultStatus" : "liso:ResultStatus",
+    "ScoreConstraints" : "liso:ScoreConstraints",
+    "comment" : {
+      "@id" : "liso:comment",
+      "@type" : "lti-type:DataValue.Type"
+    },
+    "context_id" : {
+      "@id" : "lti:context_id",
+      "@type" : "xs:normalizedString"
+    },
+    "extraCreditMaximum" : {
+      "@id" : "liso:extraCreditMaximum",
+      "@type" : "xs:float"
+    },
+    "extraCreditScore" : {
+      "@id" : "liso:extraCreditScore",
+      "@type" : "xs:decimal"
+    },
+    "gradedBy" : {
+      "@id" : "liso:gradedBy",
+      "@type" : "@id"
+    },
+    "lineItem" : "lti:lineItem",
+    "lineItems" : "lti:lineItems",
+    "membershipSubject" : "ldp:membershipSubject",
+    "nextPage" : {
+      "@id" : "ldp:nextPage",
+      "@type" : "@id"
+    },
+    "normalMaximum" : {
+      "@id" : "liso:normalMaximum",
+      "@type" : "xs:float"
+    },
+    "normalScore" : {
+      "@id" : "liso:normalScore",
+      "@type" : "xs:decimal"
+    },
+    "pageOf" : "ldp:pageOf",
+    "penaltyScore" : {
+      "@id" : "liso:penaltyScore",
+      "@type" : "xs:decimal"
+    },
+    "result" : "liso:result",
+    "resultAgent" : {
+      "@id" : "liso:resultAgent",
+      "@type" : "@id"
+    },
+    "resultOf" : {
+      "@id" : "liso:resultOf",
+      "@type" : "@id"
+    },
+    "resultScore" : "liso:resultScore",
+    "resultScoreConstraints" : "liso:resultScoreConstraints",
+    "resultStatus" : {
+      "@id" : "liso:resultStatus",
+      "@type" : "@id"
+    },
+    "sourcedId" : {
+      "@id" : "lti:sourcedId",
+      "@type" : "xs:normalizedString"
+    },
+    "timestamp" : {
+      "@id" : "liso:timestamp",
+      "@type" : "xs:dateTime"
+    },
+    "totalMaximum" : {
+      "@id" : "liso:totalMaximum",
+      "@type" : "xs:float"
+    },
+    "totalScore" : {
+      "@id" : "liso:totalScore",
+      "@type" : "xs:decimal"
+    },
+    "" : "lisp:",
+    "Completed" : "liso:Completed",
+    "Final" : "liso:Final",
+    "Initialized" : "liso:Initialized",
+    "Started" : "liso:Started",
+    "ci:" : "ci:",
+    "exp:" : "exp:",
+    "foaf:" : "foaf:",
+    "ldp:" : "ldp:",
+    "liso:" : "liso:",
+    "lisp:" : "lisp:",
+    "lti:" : "lti:",
+    "ltic:" : "ltic:",
+    "ltiv:" : "ltiv:",
+    "nil" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil",
+    "rdfs:" : "rdfs:"
+  },
+  "@id" : "http://purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer"
+}

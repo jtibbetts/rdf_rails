@@ -1,4 +1,4 @@
-@prefix : <http://www.semanticweb.org/owl/owlapi/turtle#> .
+#@prefix : <http://www.semanticweb.org/owl/owlapi/turtle#> .
 @prefix exp: <http://purl.kinexis.com/vocab/caliper/v1/core#> .
 @prefix ldp: <http://www.w3.org/ns/ldp#> .
 @prefix lti: <http://purl.kinexis.com/vocab/lti/v2/lti#> .

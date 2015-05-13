@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:lti="http://purl.imsglobal.org/vocab/lti/v2/lti#"
+	xmlns:lti-type="http://purl.imsglobal.org/xsd/lti/v2/ltid#"
+	xmlns:ltic="http://purl.imsglobal.org/vocab/lti/v2/capability#"
+	xmlns:ltiv="http://purl.imsglobal.org/vocab/lti/v2/variable#"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+	xmlns:tcp="http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4">
+	<rdf:type rdf:resource="http://purl.imsglobal.org/vocab/lti/v2/lti#ToolConsumerProfile"/>
+	<lti:capability_offered rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/basic-lti-launch-request"/>
+	<lti:capability_offered rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/Result.autocreate"/>
+	<lti:capability_offered rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/Result.sourcedId"/>
+	<lti:capability_offered rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/Result.url"/>
+	<lti:capability_offered rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/LtiLink.custom.url"/>
+	<lti:capability_offered rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/ToolProxyBinding.custom.url"/>
+	<lti:capability_offered rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/ToolProxy.custom.url"/>
+	<lti:guid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b6ffa601-ce1d-4549-9ccf-145670a964d4</lti:guid>
+	<lti:lti_version rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">LTI-2p0</lti:lti_version>
+	<lti:product_instance rdf:nodeID="b0"/>
+	<lti:service_offered rdf:resource="http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#ToolProxy.collection"/>
+	<lti:service_offered rdf:resource="http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#ToolProxy.item"/>
+	<lti:service_offered rdf:resource="http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#Result.item"/>
+	<lti:service_offered rdf:resource="http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#LtiLinkSettings"/>
+	<lti:service_offered rdf:resource="http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#ToolProxyBindingSettings"/>
+	<lti:service_offered rdf:resource="http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#ToolProxySettings"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="b0">
+	<lti:guid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c86542d5-fde1-4aae-ae18-7018089fddcd</lti:guid>
+	<lti:product_info rdf:nodeID="b1"/>
+	<lti:service_owner rdf:resource="http://state.university.edu/"/>
+	<lti:service_provider rdf:resource="http://yasp.example.com/ServiceProvider"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="b1">
+	<lti:description rdf:nodeID="b2"/>
+	<lti:product_family rdf:nodeID="b3"/>
+	<lti:product_name rdf:nodeID="b8"/>
+	<lti:product_version rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">2.3</lti:product_version>
+	<lti:technical_description rdf:nodeID="b9"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="b2">
+	<lti:default_value rdf:datatype="http://purl.imsglobal.org/xsd/lti/v2/ltid#LongName.Type">Omega LMS is a fictitious Learning Management System</lti:default_value>
+	<lti:key rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product.version</lti:key>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="b3">
+	<lti:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">omega</lti:code>
+	<lti:vendor rdf:nodeID="b4"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="b4">
+	<lti:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lms.example.com</lti:code>
+	<lti:contact rdf:nodeID="b5"/>
+	<lti:description rdf:nodeID="b6"/>
+	<lti:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-28T09:08:16-04:00</lti:timestamp>
+	<lti:vendor_name rdf:nodeID="b7"/>
+	<lti:website rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://lms.example.com/products/omega</lti:website>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="b5">
+	<lti:email rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">support@lms.example.com</lti:email>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="b6">
+	<lti:default_value rdf:datatype="http://purl.imsglobal.org/xsd/lti/v2/ltid#LongName.Type">LMS Corporation is a fictitious vendor of a Learning Management System</lti:default_value>
+	<lti:key rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product.vendor.description</lti:key>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="b7">
+	<lti:default_value rdf:datatype="http://purl.imsglobal.org/xsd/lti/v2/ltid#LongName.Type">LMS Corporation</lti:default_value>
+	<lti:key rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product.vendor.name</lti:key>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="b8">
+	<lti:default_value rdf:datatype="http://purl.imsglobal.org/xsd/lti/v2/ltid#LongName.Type">Omega LMS</lti:default_value>
+	<lti:key rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product.name</lti:key>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="b9">
+	<lti:default_value rdf:datatype="http://purl.imsglobal.org/xsd/lti/v2/ltid#LongName.Type">LTI 1, 1.1 and 2.0 compliant</lti:default_value>
+	<lti:key rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product.technicalDescription</lti:key>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://state.university.edu/">
+	<lti:description rdf:nodeID="b10"/>
+	<lti:service_owner_name rdf:nodeID="b11"/>
+	<lti:support rdf:nodeID="b12"/>
+	<lti:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-28T09:08:16-04:00</lti:timestamp>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="b10">
+	<lti:default_value rdf:datatype="http://purl.imsglobal.org/xsd/lti/v2/ltid#LongName.Type">A fictitious university.</lti:default_value>
+	<lti:key rdf:datatype="http://www.w3.org/2001/XMLSchema#string">service_owner.description</lti:key>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="b11">
+	<lti:default_value rdf:datatype="http://purl.imsglobal.org/xsd/lti/v2/ltid#LongName.Type">State University</lti:default_value>
+	<lti:key rdf:datatype="http://www.w3.org/2001/XMLSchema#string">service_owner.name</lti:key>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="b12">
+	<lti:email rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">techsupport@university.edu</lti:email>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://yasp.example.com/ServiceProvider">
+	<lti:description rdf:nodeID="b13"/>
+	<lti:guid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yasp.example.com</lti:guid>
+	<lti:service_provider_name rdf:nodeID="b14"/>
+	<lti:support rdf:nodeID="b15"/>
+	<lti:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-28T09:08:16-04:00</lti:timestamp>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="b13">
+	<lti:default_value rdf:datatype="http://purl.imsglobal.org/xsd/lti/v2/ltid#LongName.Type">YASP is a fictitious application service provider</lti:default_value>
+	<lti:key rdf:datatype="http://www.w3.org/2001/XMLSchema#string">service_provider.description</lti:key>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="b14">
+	<lti:default_value rdf:datatype="http://purl.imsglobal.org/xsd/lti/v2/ltid#LongName.Type">Your Application Service Provider</lti:default_value>
+	<lti:key rdf:datatype="http://www.w3.org/2001/XMLSchema#string">service_provider.name</lti:key>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="b15">
+	<lti:email rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">support@yasp.example.com</lti:email>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#ToolProxy.collection">
+	<rdf:type rdf:resource="http://purl.imsglobal.org/vocab/lti/v2/lti#RestService"/>
+	<lti:action rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/POST"/>
+	<lti:endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://lms.example.com/resources/ToolProxy/</lti:endpoint>
+	<lti:format rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">application/vnd.ims.lti.v2.toolproxy+json</lti:format>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#ToolProxy.item">
+	<rdf:type rdf:resource="http://purl.imsglobal.org/vocab/lti/v2/lti#RestService"/>
+	<lti:action rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/GET"/>
+	<lti:action rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/PUT"/>
+	<lti:endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://lms.example.com/resources/ToolProxy/{tool_proxy_guid}</lti:endpoint>
+	<lti:format rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">application/vnd.ims.lti.v2.toolproxy+json</lti:format>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#Result.item">
+	<rdf:type rdf:resource="http://purl.imsglobal.org/vocab/lti/v2/lti#RestService"/>
+	<lti:action rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/GET"/>
+	<lti:action rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/PUT"/>
+	<lti:endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://lms.example.com/resources/Result/{sourcedId}</lti:endpoint>
+	<lti:format rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">application/vnd.ims.lis.v2.result+json</lti:format>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#LtiLinkSettings">
+	<rdf:type rdf:resource="http://purl.imsglobal.org/vocab/lti/v2/lti#RestService"/>
+	<lti:action rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/GET"/>
+	<lti:action rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/PUT"/>
+	<lti:endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://lms.example.com/resources/links/{link_id}/custom</lti:endpoint>
+	<lti:format rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">application/vnd.ims.lti.v2.toolsettings+json</lti:format>
+	<lti:format rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">application/vnd.ims.lti.v2.toolsettings.simple+json</lti:format>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#ToolProxyBindingSettings">
+	<rdf:type rdf:resource="http://purl.imsglobal.org/vocab/lti/v2/lti#RestService"/>
+	<lti:action rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/GET"/>
+	<lti:action rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/PUT"/>
+	<lti:endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://lms.example.com/resources/lis/{context_type}/{context_id}/bindings/{vendor_code}/{product_code}/custom</lti:endpoint>
+	<lti:format rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">application/vnd.ims.lti.v2.toolsettings+json</lti:format>
+	<lti:format rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">application/vnd.ims.lti.v2.toolsettings.simple+json</lti:format>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#ToolProxySettings">
+	<rdf:type rdf:resource="http://purl.imsglobal.org/vocab/lti/v2/lti#RestService"/>
+	<lti:action rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/GET"/>
+	<lti:action rdf:resource="file:/Users/johntibbetts/git/rdf_rails/sample_json_aligner/sample_json_imsglobal/PUT"/>
+	<lti:endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://lms.example.com/resources/ToolProxy/{tool_proxy_guid}/custom</lti:endpoint>
+	<lti:format rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">application/vnd.ims.lti.v2.toolsettings+json</lti:format>
+	<lti:format rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">application/vnd.ims.lti.v2.toolsettings.simple+json</lti:format>
+</rdf:Description>
+
+</rdf:RDF>

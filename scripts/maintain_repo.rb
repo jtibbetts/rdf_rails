@@ -62,7 +62,7 @@ def relocate_prefixes(ancestor_node, is_local_not_purl)
   end
 end
 
-relocate_prefixes(File.join(PROJECT_BASE, 'repo_aligner', 'repo'), true)
+# relocate_prefixes(File.join(PROJECT_BASE, 'repo_aligner', 'repo'), false)
 
 # needs a folder level parent
 relocate_prefixes(File.join(PROJECT_BASE, 'sample_json_aligner'), true)

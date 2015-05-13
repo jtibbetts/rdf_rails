@@ -1,0 +1,93 @@
+{
+    "@context" : {
+    "ci" : "http://purl.imsglobal.org/vocab/lti/v1/ci#",
+    "exp" : "http://purl.imsglobal.org/vocab/caliper/v1/core#",
+    "foaf" : "http://xmlns.com/foaf/0.1#",
+    "ldp" : "http://www.w3.org/ns/ldp#",
+    "liso" : "http://purl.imsglobal.org/vocab/lis/v2/outcomes#",
+    "lisp" : "http://purl.imsglobal.org/vocab/lis/v2/pm#",
+    "lti" : "http://purl.imsglobal.org/vocab/lti/v2/lti#",
+    "ltic" : "http://purl.imsglobal.org/vocab/lti/v2/capability#",
+    "ltiv" : "http://purl.imsglobal.org/vocab/lti/v2/variable#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "AssignmentLink" : {
+      "@id" : "lti:AssignmentLink",
+      "class" : {
+        "supertype" : [
+          "http://purl.imsglobal.org/vocab/lti/v2/lti#LtiLink"
+        ],
+        "restriction" : [
+          {
+            "onProperty" : "http://purl.imsglobal.org/vocab/lti/v2/lti#linkLineItem"
+          }
+        ]
+      }
+    },
+    "LineItem" : {
+      "@id" : "liso:LineItem",
+      "class" : {}
+
+    },
+    "linkLineItem" : {
+      "@id" : "lti:linkLineItem",
+      "@type" : "@id",
+      "property" : {        "domain" : [
+          "http://purl.imsglobal.org/vocab/lti/v2/lti#AssignmentLink"
+        ]
+      }
+    },
+    "" : "lisp:",
+    "ci:" : "ci:",
+    "exp:" : "exp:",
+    "foaf:" : "foaf:",
+    "ldp:" : "ldp:",
+    "liso:" : "liso:",
+    "lti:" : "lti:",
+    "ltic:" : "ltic:",
+    "ltiv:" : "ltiv:",
+    "rdfs:" : "rdfs:",
+    "LtiLink" : {
+      "@id" : "http://purl.imsglobal.org/vocab/lti/v2/lti#LtiLink",
+      "class" : {
+        "supertype" : [
+          "http://purl.imsglobal.org/vocab/lti/v1/ci#ContentItem",
+          "http://purl.imsglobal.org/vocab/lti/v2/lti#ToolSettingsContainer"
+        ]
+      }
+    },
+    "ContentItem" : {
+      "@id" : "http://purl.imsglobal.org/vocab/lti/v1/ci#ContentItem",
+      "class" : {}
+
+    },
+    "FileItem" : {
+      "@id" : "http://purl.imsglobal.org/vocab/lti/v1/ci#FileItem",
+      "class" : {
+        "supertype" : [
+          "http://purl.imsglobal.org/vocab/lti/v1/ci#ContentItem"
+        ]
+      }
+    },
+    "ToolSettingsContainer" : {
+      "@id" : "http://purl.imsglobal.org/vocab/lti/v2/lti#ToolSettingsContainer",
+      "class" : {}
+
+    },
+    "ToolProxyBinding" : {
+      "@id" : "http://purl.imsglobal.org/vocab/lti/v2/lti#ToolProxyBinding",
+      "class" : {
+        "supertype" : [
+          "http://purl.imsglobal.org/vocab/lti/v2/lti#ToolSettingsContainer"
+        ]
+      }
+    },
+    "ToolProxy" : {
+      "@id" : "http://purl.imsglobal.org/vocab/lti/v2/lti#ToolProxy",
+      "class" : {
+        "supertype" : [
+          "http://purl.imsglobal.org/vocab/lti/v2/lti#ToolSettingsContainer"
+        ]
+      }
+    }
+  }
+}

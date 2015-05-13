@@ -1,0 +1,31 @@
+{
+  "@context" : {
+    "ci" : "http://purl.imsglobal.org/vocab/lti/v1/ci#",
+    "exp" : "http://purl.imsglobal.org/vocab/caliper/v1/core#",
+    "foaf" : "http://xmlns.com/foaf/0.1#",
+    "ldp" : "http://www.w3.org/ns/ldp#",
+    "liso" : "http://purl.imsglobal.org/vocab/lis/v2/outcomes#",
+    "lisp" : "http://purl.imsglobal.org/vocab/lis/v2/pm#",
+    "lti" : "http://purl.imsglobal.org/vocab/lti/v2/lti#",
+    "ltic" : "http://purl.imsglobal.org/vocab/lti/v2/capability#",
+    "ltiv" : "http://purl.imsglobal.org/vocab/lti/v2/variable#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "AssignmentLink" : "lti:AssignmentLink",
+    "LineItem" : "liso:LineItem",
+    "linkLineItem" : {
+      "@id" : "lti:linkLineItem",
+      "@type" : "@id"
+    },
+    "" : "lisp:",
+    "ci:" : "ci:",
+    "exp:" : "exp:",
+    "foaf:" : "foaf:",
+    "ldp:" : "ldp:",
+    "liso:" : "liso:",
+    "lti:" : "lti:",
+    "ltic:" : "ltic:",
+    "ltiv:" : "ltiv:",
+    "rdfs:" : "rdfs:"
+  },
+  "@id" : "http://purl.imsglobal.org/ctx/lti/v2/AssignmentLink.init"
+}

@@ -1,0 +1,26 @@
+{
+  "@context" : {
+    "foaf" : "http://xmlns.com/foaf/0.1#",
+    "liso" : "http://purl.imsglobal.org/vocab/lis/v2/outcomes#",
+    "lisp" : "http://purl.imsglobal.org/vocab/lis/v2/pm#",
+    "lti-type" : "http://purl.imsglobal.org/xsd/lti/v2/ltid#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "xs" : "http://www.w3.org/2001/XMLSchema#",
+    "Agent" : "foaf:Agent",
+    "DataValue.Type" : "lti-type:DataValue.Type",
+    "Literal" : "rdfs:Literal",
+    "Person" : "lisp:Person",
+    "Result" : "liso:Result",
+    "comment" : {
+      "@id" : "liso:comment",
+      "@type" : "lti-type:DataValue.Type"
+    },
+    "gradedBy" : "liso:gradedBy",
+    "resultAgent" : "liso:resultAgent",
+    "resultScore" : {
+      "@id" : "liso:resultScore",
+      "@type" : "xs:string"
+    }
+  },
+  "@id" : "http://purl.imsglobal.org/ctx/lis/v2/Result"
+}

@@ -6,6 +6,13 @@ class ResourcesController < ApplicationController
 
   def show
     Rails.logger.info('Resources show')
+    logger.warn "*** BEGIN RAW REQUEST HEADERS ***"
+    self.request.env.each do |header|
+      logger.warn "HEADER KEY: #{header[0]}"
+      logger.warn "HEADER VAL: #{header[1]}"
+    end
+    logger.warn "*** END RAW REQUEST HEADERS ***"
+
     # path = params[:anyroute]
     path = env['PATH_INFO']
 
@@ -48,17 +55,18 @@ class ResourcesController < ApplicationController
   def choose_linked_data_file(full_path)
     result = nil
     filemap_by_ext = create_filemap_by_ext(full_path)
+    last_zone = full_path.split('/')[-1]
     Rails.logger.info("Choose #{full_path} from #{filemap_by_ext.inspect}")
     if filemap_by_ext.has_key? '.rdf'
-      return get_first_file(filemap_by_ext, '.rdf')
+      return validate_file_present(last_zone, filemap_by_ext, '.rdf')
     elsif filemap_by_ext.has_key? '.ttl'
-      return get_first_file(filemap_by_ext, '.ttl')
+      return validate_file_present(last_zone, filemap_by_ext, '.ttl')
     elsif filemap_by_ext.has_key? '.n3'
-      return get_first_file(filemap_by_ext, '.n3')
+      return validate_file_present(last_zone, filemap_by_ext, '.n3')
     elsif filemap_by_ext.has_key? '.jsonld'
-      return get_first_file(filemap_by_ext, '.jsonld')
+      return validate_file_present(last_zone, filemap_by_ext, '.jsonld')
     elsif filemap_by_ext.has_key? '.json'
-      return get_first_file(filemap_by_ext, '.json')
+      return validate_file_present(last_zone, filemap_by_ext, '.json')
     end
   end
 
@@ -86,14 +94,19 @@ class ResourcesController < ApplicationController
     contents
   end
 
-  def get_first_file(filemap_by_ext, extension)
-    files_by_ext = filemap_by_ext[extension]
-    files_by_ext.sort![0]
-  end
-
   def get_extension(path)
     last_zone = path.split('/')[-1]
     zones = last_zone.split('.')
     extension = (zones.length > 1) ? zones[-1] : nil
   end
+
+  def validate_file_present(filename, filemap_by_ext, extension)
+    files_by_ext = filemap_by_ext[extension]
+    # files_by_ext.sort![0]
+    target_file = "#{filename}#{extension}"
+    files_by_ext.include?(target_file) ? target_file : nil
+    full_path_array = files_by_ext.select {|file| file.downcase.end_with? target_file.downcase}
+    (full_path_array.length > 0) ? full_path_array[0] : nil
+  end
+
 end

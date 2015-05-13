@@ -1,0 +1,82 @@
+{
+  "@context" : {
+    "ci" : "http://purl.imsglobal.org/vocab/lti/v1/ci#",
+    "exp" : "http://purl.imsglobal.org/vocab/caliper/v1/core#",
+    "foaf" : "http://xmlns.com/foaf/0.1#",
+    "ldp" : "http://www.w3.org/ns/ldp#",
+    "liso" : "http://purl.imsglobal.org/vocab/lis/v2/outcomes#",
+    "lisp" : "http://purl.imsglobal.org/vocab/lis/v2/pm#",
+    "lti" : "http://purl.imsglobal.org/vocab/lti/v2/lti#",
+    "ltic" : "http://purl.imsglobal.org/vocab/lti/v2/capability#",
+    "ltiv" : "http://purl.imsglobal.org/vocab/lti/v2/variable#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "xs" : "http://www.w3.org/2001/XMLSchema#",
+    "Activity" : "exp:Activity",
+    "Container" : "ldp:Container",
+    "Context" : "lti:Context",
+    "LineItem" : "liso:LineItem",
+    "LineItemContainer" : "liso:LineItemContainer",
+    "Literal" : "rdfs:Literal",
+    "NumericLimits" : "liso:NumericLimits",
+    "Page" : "ldp:Page",
+    "Property" : "rdf:Property",
+    "Resource" : "rdfs:Resource",
+    "ResultContainer" : "liso:ResultContainer",
+    "ScoreConstraints" : "liso:ScoreConstraints",
+    "activity_id" : {
+      "@id" : "exp:activity_id",
+      "@type" : "xs:normalizedString"
+    },
+    "assignedActivity" : "liso:assignedActivity",
+    "context_id" : {
+      "@id" : "lti:context_id",
+      "@type" : "xs:normalizedString"
+    },
+    "extraCreditMaximum" : {
+      "@id" : "liso:extraCreditMaximum",
+      "@type" : "xs:float"
+    },
+    "label" : {
+      "@id" : "rdfs:label",
+      "@type" : "xs:string"
+    },
+    "lineItem" : "lti:lineItem",
+    "membershipSubject" : "ldp:membershipSubject",
+    "nextPage" : {
+      "@id" : "ldp:nextPage",
+      "@type" : "@id"
+    },
+    "normalMaximum" : {
+      "@id" : "liso:normalMaximum",
+      "@type" : "xs:float"
+    },
+    "pageOf" : "ldp:pageOf",
+    "reportingMethod" : {
+      "@id" : "liso:reportingMethod",
+      "@type" : "@id"
+    },
+    "results" : {
+      "@id" : "liso:results",
+      "@type" : "@id"
+    },
+    "scoreConstraints" : "liso:scoreConstraints",
+    "totalMaximum" : {
+      "@id" : "liso:totalMaximum",
+      "@type" : "xs:float"
+    },
+    "" : "lisp:",
+    "ci:" : "ci:",
+    "exp:" : "exp:",
+    "foaf:" : "foaf:",
+    "ldp:" : "ldp:",
+    "liso:" : "liso:",
+    "lisp:" : "lisp:",
+    "lti:" : "lti:",
+    "ltic:" : "ltic:",
+    "ltiv:" : "ltiv:",
+    "nil" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil",
+    "rdfs:" : "rdfs:"
+  },
+  "@id" : "http://purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer"
+}

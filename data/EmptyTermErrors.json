@@ -1,0 +1,67 @@
+LineItemContainer
+
+{
+    "details": {
+        "cause": {
+            "details": {
+                "cause": "",
+                "code": "loading document failed",
+                "url": "http://purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer"
+            },
+            "message": "URL could not be dereferenced, an error occurred.",
+            "name": "jsonld.LoadDocumentError",
+            "stack": "wrapper/JsonLdError@http://json-ld.org/playground/jsonld.js:2263:19\nwrapper/jsonld.documentLoaders.jquery/loader/<.error@http://json-ld.org/playground/jsonld.js:1614:1\nn.Callbacks/j@http://cdn.jsdelivr.net/g/jquery@1.11.0,es6-promise@1.0.0,bootstrap@2.3.2,codemirror@3.22.0(codemirror.min.js+addon/lint/lint.js+addon/edit/matchbrackets.js+addon/edit/closebrackets.js+addon/display/placeholder.js+addon/hint/show-hint.js+mode/ntriples/ntriples.js+mode/javascript/javascript.js):3:27131\nn.Callbacks/k.fireWith@http://cdn.jsdelivr.net/g/jquery@1.11.0,es6-promise@1.0.0,bootstrap@2.3.2,codemirror@3.22.0(codemirror.min.js+addon/lint/lint.js+addon/edit/matchbrackets.js+addon/edit/closebrackets.js+addon/display/placeholder.js+addon/hint/show-hint.js+mode/ntriples/ntriples.js+mode/javascript/javascript.js):3:27949\nx@http://cdn.jsdelivr.net/g/jquery@1.11.0,es6-promise@1.0.0,bootstrap@2.3.2,codemirror@3.22.0(codemirror.min.js+addon/lint/lint.js+addon/edit/matchbrackets.js+addon/edit/closebrackets.js+addon/display/placeholder.js+addon/hint/show-hint.js+mode/ntriples/ntriples.js+mode/javascript/javascript.js):5:22267\n.send/b@http://cdn.jsdelivr.net/g/jquery@1.11.0,es6-promise@1.0.0,bootstrap@2.3.2,codemirror@3.22.0(codemirror.min.js+addon/lint/lint.js+addon/edit/matchbrackets.js+addon/edit/closebrackets.js+addon/display/placeholder.js+addon/hint/show-hint.js+mode/ntriples/ntriples.js+mode/javascript/javascript.js):5:26298\n"
+        },
+        "code": "loading remote context failed",
+        "url": "http://purl.imsglobal.org/ctx/lis/v2/outcomes/LineItemContainer"
+    },
+    "message": "Dereferencing a URL did not result in a valid JSON-LD object. Possible causes are an inaccessible URL perhaps due to a same-origin policy (ensure the server uses CORS if you are using client-side JavaScript), too many redirects, a non-JSON response, or more than one HTTP Link Header was provided for a remote context.",
+    "name": "jsonld.InvalidUrl",
+    "stack": "wrapper/JsonLdError@http://json-ld.org/playground/jsonld.js:2263:19\n_retrieveContextUrls/retrieve/</done@http://json-ld.org/playground/jsonld.js:6240:19\n"
+}
+
+
+ResultContainer
+
+{
+    "details": {
+        "cause": {
+            "details": {
+                "cause": "",
+                "code": "loading document failed",
+                "url": "http://purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer"
+            },
+            "message": "URL could not be dereferenced, an error occurred.",
+            "name": "jsonld.LoadDocumentError",
+            "stack": "wrapper/JsonLdError@http://json-ld.org/playground/jsonld.js:2263:19\nwrapper/jsonld.documentLoaders.jquery/loader/<.error@http://json-ld.org/playground/jsonld.js:1614:1\nn.Callbacks/j@http://cdn.jsdelivr.net/g/jquery@1.11.0,es6-promise@1.0.0,bootstrap@2.3.2,codemirror@3.22.0(codemirror.min.js+addon/lint/lint.js+addon/edit/matchbrackets.js+addon/edit/closebrackets.js+addon/display/placeholder.js+addon/hint/show-hint.js+mode/ntriples/ntriples.js+mode/javascript/javascript.js):3:27131\nn.Callbacks/k.fireWith@http://cdn.jsdelivr.net/g/jquery@1.11.0,es6-promise@1.0.0,bootstrap@2.3.2,codemirror@3.22.0(codemirror.min.js+addon/lint/lint.js+addon/edit/matchbrackets.js+addon/edit/closebrackets.js+addon/display/placeholder.js+addon/hint/show-hint.js+mode/ntriples/ntriples.js+mode/javascript/javascript.js):3:27949\nx@http://cdn.jsdelivr.net/g/jquery@1.11.0,es6-promise@1.0.0,bootstrap@2.3.2,codemirror@3.22.0(codemirror.min.js+addon/lint/lint.js+addon/edit/matchbrackets.js+addon/edit/closebrackets.js+addon/display/placeholder.js+addon/hint/show-hint.js+mode/ntriples/ntriples.js+mode/javascript/javascript.js):5:22267\n.send/b@http://cdn.jsdelivr.net/g/jquery@1.11.0,es6-promise@1.0.0,bootstrap@2.3.2,codemirror@3.22.0(codemirror.min.js+addon/lint/lint.js+addon/edit/matchbrackets.js+addon/edit/closebrackets.js+addon/display/placeholder.js+addon/hint/show-hint.js+mode/ntriples/ntriples.js+mode/javascript/javascript.js):5:26298\n"
+        },
+        "code": "loading remote context failed",
+        "url": "http://purl.imsglobal.org/ctx/lis/v2/outcomes/ResultContainer"
+    },
+    "message": "Dereferencing a URL did not result in a valid JSON-LD object. Possible causes are an inaccessible URL perhaps due to a same-origin policy (ensure the server uses CORS if you are using client-side JavaScript), too many redirects, a non-JSON response, or more than one HTTP Link Header was provided for a remote context.",
+    "name": "jsonld.InvalidUrl",
+    "stack": "wrapper/JsonLdError@http://json-ld.org/playground/jsonld.js:2263:19\n_retrieveContextUrls/retrieve/</done@http://json-ld.org/playground/jsonld.js:6240:19\n"
+}
+
+
+Resultv2p1
+
+{
+    "details": {
+        "cause": {
+            "details": {
+                "cause": "",
+                "code": "loading document failed",
+                "url": "http://purl.imsglobal.org/ctx/lis/v2p1/Result"
+            },
+            "message": "URL could not be dereferenced, an error occurred.",
+            "name": "jsonld.LoadDocumentError",
+            "stack": "wrapper/JsonLdError@http://json-ld.org/playground/jsonld.js:2263:19\nwrapper/jsonld.documentLoaders.jquery/loader/<.error@http://json-ld.org/playground/jsonld.js:1614:1\nn.Callbacks/j@http://cdn.jsdelivr.net/g/jquery@1.11.0,es6-promise@1.0.0,bootstrap@2.3.2,codemirror@3.22.0(codemirror.min.js+addon/lint/lint.js+addon/edit/matchbrackets.js+addon/edit/closebrackets.js+addon/display/placeholder.js+addon/hint/show-hint.js+mode/ntriples/ntriples.js+mode/javascript/javascript.js):3:27131\nn.Callbacks/k.fireWith@http://cdn.jsdelivr.net/g/jquery@1.11.0,es6-promise@1.0.0,bootstrap@2.3.2,codemirror@3.22.0(codemirror.min.js+addon/lint/lint.js+addon/edit/matchbrackets.js+addon/edit/closebrackets.js+addon/display/placeholder.js+addon/hint/show-hint.js+mode/ntriples/ntriples.js+mode/javascript/javascript.js):3:27949\nx@http://cdn.jsdelivr.net/g/jquery@1.11.0,es6-promise@1.0.0,bootstrap@2.3.2,codemirror@3.22.0(codemirror.min.js+addon/lint/lint.js+addon/edit/matchbrackets.js+addon/edit/closebrackets.js+addon/display/placeholder.js+addon/hint/show-hint.js+mode/ntriples/ntriples.js+mode/javascript/javascript.js):5:22267\n.send/b@http://cdn.jsdelivr.net/g/jquery@1.11.0,es6-promise@1.0.0,bootstrap@2.3.2,codemirror@3.22.0(codemirror.min.js+addon/lint/lint.js+addon/edit/matchbrackets.js+addon/edit/closebrackets.js+addon/display/placeholder.js+addon/hint/show-hint.js+mode/ntriples/ntriples.js+mode/javascript/javascript.js):5:26298\n"
+        },
+        "code": "loading remote context failed",
+        "url": "http://purl.imsglobal.org/ctx/lis/v2p1/Result"
+    },
+    "message": "Dereferencing a URL did not result in a valid JSON-LD object. Possible causes are an inaccessible URL perhaps due to a same-origin policy (ensure the server uses CORS if you are using client-side JavaScript), too many redirects, a non-JSON response, or more than one HTTP Link Header was provided for a remote context.",
+    "name": "jsonld.InvalidUrl",
+    "stack": "wrapper/JsonLdError@http://json-ld.org/playground/jsonld.js:2263:19\n_retrieveContextUrls/retrieve/</done@http://json-ld.org/playground/jsonld.js:6240:19\n"
+}
