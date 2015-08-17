@@ -18,6 +18,8 @@ gem 'uglifier'
 gem 'coffee-rails'
 
 gem 'haml-rails'
+gem 'haml-contrib'
+
 gem 'nokogiri'
 
 gem 'rdf'
@@ -25,6 +27,9 @@ gem 'rdf-turtle'
 gem 'json-ld'
 gem 'rdf-rdfxml'
 
+gem 'lti2', path: '../LTI2-Reference'
+
+gem 'RedCloth'
 
 group :development, :test do
   gem 'pry'

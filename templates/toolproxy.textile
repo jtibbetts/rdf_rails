@@ -1,0 +1,2446 @@
+                    IMS Final Release
+
+!http://www.imsglobal.org/images/imslogo.png!
+
+
+h1. ToolProxy JSON Binding
+in the @application/vnd.ims.lti.v2.toolproxy+json@ format
+
+Final Version 2.0
+
+Media Type
+
+application/vnd.ims.lti.v2.toolproxy+json
+
+RDF Type
+
+"http://purl.imsglobal.org/vocab/lti/v2/lti#ToolProxy":../../../../../../../uml/purl.imsglobal.org/vocab/lti/v2/lti/index.html#ToolProxy
+
+JSON-LD
+
+"http://purl.imsglobal.org/ctx/lti/v2/ToolProxy":context.json
+
+
+
+Date Issued: 6 January 2014
+
+Latest version: "http://www.imsglobal.org/lti":http://www.imsglobal.org/lti
+
+*IPR and Distribution Notices*
+
+Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the specification set forth in this document, and to provide supporting documentation.
+
+IMS takes no position regarding the validity or scope of any intellectual property or other rights that might be claimed to pertain to the implementation or use of the technology described in this document or the extent to which any license under such rights might or might not be available; neither does it represent that it has made any effort to identify any such rights. Information on IMS's procedures with respect to rights in IMS specifications can be found at the IMS Intellectual Property Rights web page: "http://www.imsglobal.org/ipr/imsipr_policyFinal.pdf":http://www.imsglobal.org/ipr/imsipr_policyFinal.pdf.
+
+Copyright © 2014 IMS Global Learning Consortium. All Rights Reserved.
+
+Use of this specification to develop products or services is governed by the license with IMS found on the IMS website: "http://www.imsglobal.org/license.html":http://www.imsglobal.org/license.html.
+
+Permission is granted to all parties to use excerpts from this document as needed in producing requests for proposals.
+
+The limited permissions granted above are perpetual and will not be revoked by IMS or its successors or assigns.
+
+THIS SPECIFICATION IS BEING OFFERED WITHOUT ANY WARRANTY WHATSOEVER, AND IN PARTICULAR, ANY WARRANTY OF NONINFRINGEMENT IS EXPRESSLY DISCLAIMED. ANY USE OF THIS SPECIFICATION SHALL BE MADE ENTIRELY AT THE IMPLEMENTER'S OWN RISK, AND NEITHER THE CONSORTIUM, NOR ANY OF ITS MEMBERS OR SUBMITTERS, SHALL HAVE ANY LIABILITY WHATSOEVER TO ANY IMPLEMENTER OR THIRD PARTY FOR ANY DAMAGES OF ANY NATURE WHATSOEVER, DIRECTLY OR INDIRECTLY, ARISING FROM THE USE OF THIS SPECIFICATION.
+
+Join the discussion and post comments on the LTI Public Forum: "http://www.imsglobal.org/community/forum/categories.cfm?catid=44":http://www.imsglobal.org/community/forum/categories.cfm?catid=44
+
+<hr />
+
+h2. Abstract
+
+In the IMS LTI standard, a Tool Proxy represents an integration contract between two systems known respectively as Tool Consumer and Tool Provider. This specification document defines a JSON binding for Tool Proxy objects.
+
+h2. Table of Contents
+
+1. "Introduction":#Introduction
+
+* 1.1 "How To Read this Document":#How_To_Read_this_Document
+* 1.2 "Reserved Terms":#Reserved_Terms
+* 1.3 "The JSON-LD Context":#The_JSON-LD_Context
+
+2. "The ToolProxy Media Type":#The_ToolProxy_Media_Type
+
+3. "JSON Data Bindings":#JSON_Data_Bindings
+
+* 3.1 "BaseUrlChoice":#BaseUrlChoice
+* 3.2 "BaseUrlSelector":#BaseUrlSelector
+* 3.3 "Capability":#Capability
+* 3.4 "Contact":#Contact
+* 3.5 "DataValue.Type":#DataValue.Type
+* 3.6 "GUID.Type":#GUID.Type
+* 3.7 "HttpMethod":#HttpMethod
+* 3.8 "IconEndpoint":#IconEndpoint
+* 3.9 "IconInfo":#IconInfo
+* 3.10 "IconStyle":#IconStyle
+* 3.11 "LocalizedName":#LocalizedName
+* 3.12 "LocalizedText":#LocalizedText
+* 3.13 "MessageHandler":#MessageHandler
+* 3.14 "MessageType":#MessageType
+* 3.15 "Name.Type":#Name.Type
+* 3.16 "Parameter":#Parameter
+* 3.17 "ProductFamily":#ProductFamily
+* 3.18 "ProductInfo":#ProductInfo
+* 3.19 "ProductInstance":#ProductInstance
+* 3.20 "PropertyMap":#PropertyMap
+* 3.21 "ResourceHandler":#ResourceHandler
+* 3.22 "ResourceType":#ResourceType
+* 3.23 "RestService":#RestService
+* 3.24 "RestServiceProfile":#RestServiceProfile
+* 3.25 "SecurityContract":#SecurityContract
+* 3.26 "ServiceDescriptor":#ServiceDescriptor
+* 3.27 "ServiceOwner":#ServiceOwner
+* 3.28 "ServiceProfile":#ServiceProfile
+* 3.29 "ServiceProvider":#ServiceProvider
+* 3.30 "Token.Type":#Token.Type
+* 3.31 "ToolProfile":#ToolProfile
+* 3.32 "ToolProxy":#ToolProxy
+* 3.33 "VariableName.Type":#VariableName.Type
+* 3.34 "Vendor":#Vendor
+* 3.35 "LongName.Type":#LongName.Type
+* 3.36 "Text.Type":#Text.Type
+
+4. "References":#References
+
+"About this Document":#About_this_Document
+
+
+
+h2. 1. Introduction
+
+This specification defines a JSON binding for ToolProxy objects. This binding is used to register a new Tool within a Tool Consumer system via a REST API, as described in the LTI Implementation Guide "[LTI, 14 IG]":#_LTI__14_IG_.
+
+The binding defined in this specification conforms to the JSON-LD conventions "[JSON-LD-syntax]":#_JSON_LD_syntax_. Briefly, JSON-LD adds semantics to a JSON document by associating properties that may appear in a document with well-defined data types through the use of a so-called "context". It is not necessary to understand the mechanics of JSON-LD to render a JSON document that complies with the binding defined by this specification. Indeed, this specification is self-contained in the sense that it provides all the information necessary to render a compliant JSON binding of a ToolProxy object. On the other hand, readers who have some familiarity with JSON-LD will likely find this specification document easier to digest.
+
+Figure 1 shows the representation of a ToolProxy resource in the @application/vnd.ims.lti.v2.toolproxy+json@ format.
+
+bc. {
+  "@context" : [
+      "http://purl.imsglobal.org/ctx/lti/v2/ToolProxy",
+      "http://purl.org/blackboard/ctx/v1/iconStyle"
+  ],
+  "@type" : "ToolProxy",
+  "@id" : "http://lms.example.com/ToolProxy/869e5ce5-214c-4e85-86c6-b99e8458a592",
+  "lti_version" : "LTI-2p0",
+  "tool_proxy_guid" : "869e5ce5-214c-4e85-86c6-b99e8458a592",
+  "tool_consumer_profile" : "http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4",
+  "tool_profile" : {
+    "lti_version" : "LTI-2p0",
+    "product_instance" : {
+      "guid" : "fd75124a-140e-470f-944c-114d2d92bb40",
+      "product_info" : {
+        "product_name" : {
+          "default_value" : "Acme Assessments",
+          "key" : "tool.name"
+        },
+        "description" : {
+          "default_value" : "Acme Assessments provide an interactive test format.",
+          "key" : "tool.description"
+        },
+        "product_version" : "10.3",
+        "technical_description" : {
+          "default_value" : "Support provided for all LTI 1 extensions as well as LTI 2",
+          "key" : "tool.technical"
+        },
+        "product_family" : {
+          "@id" : "http://toolprovider.example.com/vendor/acme.com/product/assessment-tool",
+          "code" : "assessment-tool",
+          "vendor" : {
+            "code" : "acme.com",
+            "vendor_name" : {
+              "default_value" : "Acme",
+              "key" : "tool.vendor.name"
+            },
+            "description" : {
+              "default_value" : "Acme is a leading provider of interactive tools for education",
+              "key" : "tool.vendor.description"
+            },
+            "website" : "http://acme.example.com",
+            "timestamp" : "2012-04-05T09:08:16-04:00",
+            "contact" : {
+              "email" : "info@example.com"
+            }
+          }
+        }
+      },
+      "support" : {
+        "email" : "helpdesk@example.com"
+      },
+      "service_provider" : {
+        "guid" : "18e7ea50-3d6d-4f6b-aff2-ed3ab577716c",
+        "service_provider_name" : {
+          "default_value" : "Acme Hosting",
+          "key" : "service_provider.name"
+        },
+        "description" : {
+          "default_value" : "Provider of high performance managed hosting environments",
+          "key" : "service_provider.description"
+        },
+        "support" : {
+          "email" : "support@acme-hosting.example.com"
+        },
+        "timestamp" : "2012-04-05T09:08:16-04:00"
+      },
+      "service_owner" : {
+        "service_owner_name" : {
+          "default_value" : "Acme Institution",
+          "key" : "service_owner.name"
+        },
+        "description" : {
+          "default_value" : "Provider of high quality education",
+          "key" : "service_owner.description"
+        },
+        "timestamp" : "2012-04-05T09:08:16-04:00"
+      }
+    },
+    "base_url_choice" : [
+       { "default_base_url" : "http://acme.example.com/",
+         "secure_base_url" : "https://acme.example.com/",
+         "selector" : {
+           "applies_to" : ["IconEndpoint", "MessageHandler"]
+         }
+       }
+     ],
+    "resource_handler" : [
+      {
+        "resource_type" : { "code" : "asmt"},
+        "resource_name" : {
+          "default_value" : "Acme Assessment",
+          "key" : "assessment.resource.name"
+        },
+        "description" : {
+          "default_value" : "An interactive assessment using the Acme scale.",
+          "key" : "assessment.resource.description"
+        },
+        "message" : [{
+          "message_type" : "basic-lti-launch-request",
+          "path" : "handler/launchRequest",
+          "enabled_capability" : [
+            "Result.autocreate"
+          ],
+          "parameter" : [
+            { "name" : "result_url",
+              "variable" : "Result.url"
+            },
+            { "name" : "discipline",
+              "fixed" : "chemistry"
+            }
+          ]
+        }],
+        "icon_info" : [
+           {
+             "default_location" : {
+               "path" : "images/bb/en/icon.png"
+             },
+             "key" : "iconStyle.default.path"
+           },
+           { "icon_style" : ["BbListElementIcon"],
+             "default_location" : {
+               "path" : "images/bb/en/listElement.png"
+             },
+             "key" : "iconStyle.bb.listElement.path"
+           },
+           { "icon_style" : ["BbPushButtonIcon"],
+             "default_location" : {
+               "path" : "images/bb/en/pushButton.png"
+             },
+             "key" : "iconStyle.bb.pushButton.path"
+           }
+         ]
+      }
+    ]
+  },
+  "custom" : {
+    "customerId" : "394892759526"
+  },
+  "security_contract" : {
+    "shared_secret" : "ThisIsASecret!",
+    "tool_service" : [
+      { "@type" : "RestServiceProfile",
+        "service" : "http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#ToolProxy.collection",
+        "action" : ["POST"]
+      },
+      { "@type" : "RestServiceProfile",
+        "service" : "http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#ToolProxy.item",
+        "action" : ["GET", "PUT"]
+      },
+      { "@type" : "RestServiceProfile",
+        "service" : "http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#Result.item",
+        "action" : ["GET", "PUT"]
+      }
+    ],
+    "end_user_service" : [
+      { "@type" : "RestServiceProfile",
+        "service" : "http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#Result.item",
+        "action" : ["PUT"]
+      }
+    ]
+  }
+}
+
+
+
+Figure 1.  Example JSON document containing a ToolProxy object
+
+h3. 1.1 How To Read this Document
+
+This specification defines the structure of a JSON document using a graphical notation. In this notatation, an object is represented by a box that branches out to other boxes corresponding to the properties of that object, as shown in "Figure 2":#sampleObj.
+
+!images/sampleObj.png!
+
+
+Figure 2.  Representation of a JSON object
+
+Figure 2 is not a complete representation of a @ToolProxy@ object because there are embedded objects (@tool_proxy_guid@, @tool_profile@, @security_contract@, @custom@). A complete diagram would show branches emanating from the embedded objects to reveal their properties, and so on, recursively. For a complete representation, see "Figure 6":#completeRep below.
+
+Each box representing a property specifies the name and type of the property , as shown in "Figure 3":#sampleProperty.
+
+!images/sampleProperty.png!
+
+
+Figure 3.  Graphical notation for a property
+
+If a property is optional, its box will be decorated with a circle that contains a question mark, as shown in "Figure 4":#optional-property.
+
+!images/optionalproperty.png!
+
+
+Figure 4.  Example of an optional property
+
+If a property can have multiple values, then its box in the graphical notation is decorated with a circle that contains a plus sign (+) as shown in "Figure 3":#sampleProperty. In this example, the @applies_to@ property may reference more than one @xs:Class@ object. Ordinarily, these values are encapsulated within a JSON array, but if it turns out that only one value is present, then the square brackets for the array are optional.
+
+An object within a JSON-LD document may have one of four possible representations:
+
+
+
+# The object may be identified by a fully-qualified URI reference.
+# The object may be identified by a Compact URI reference, known as a CURIE "[CURIE-syntax]":#_CURIE_syntax_, that can be expanded to a fully qualified URI
+# The object may be identified by a simple name that is mapped to a fully-qualified URI. This mapping is defined by the JSON-LD context.
+# The object may be embedded within the document.
+
+When an object is to be identified by a fully-qualified URI or a CURIE, the box representing the object will be decorated with the #uri hash tag, as shown in "Figure 3":#sampleProperty.
+
+When an object or enumerable value is to be identified by a simple name, the box representing the corresponding property will be decorated with the #sn hash tag, as shown in "Figure 5":#snRef.
+
+!images/snRef.png!
+
+
+Figure 5.  Property whose value is a simple name reference for an individual object or enumerable value
+
+h3. 1.2 Reserved Terms
+
+The JSON-LD standard reserves a handful of property names and tokens that have special meaning. These names and tokens, described below, begin with the '@' symbol.
+
+<dl>
+<dt>@context</dt>
+<dd>Used to reference (by URI or by value) a _context_ which declares the simple names that appear throughout a JSON document.</dd>
+<dt>@id</dt>
+<dd>Used to uniquely identify things that are being described in the JSON document. The value of an @id property is either a fully-qualified URI, a CURIE, or a simple name that expands to a fully-qualified URI by virtue of the rules defined in the JSON-LD Context.
+The @id property may identify a so-called blank node by using a CURIE with an underscore as the prefix. The binding of a JSON-LD document MAY include identifiers for blank nodes, but these identifiers are not required.</dd>
+<dt>@type</dt>
+<dd>Used to set the data type of an object or property value.</dd>
+</dl>
+
+JSON-LD specifies four other reserved terms (@value, @language, @container, @list). Ordinarily, these terms are not used in the JSON binding for @ToolProxy@ objects. However, implementations that extend this specification by including additional properties may utilize these reserved terms in accordance with the rules defined by "[JSON-LD-syntax]":#_JSON_LD_syntax_.
+
+h3. 1.3 The JSON-LD Context
+
+In JSON-LD, a context is used to map simple names that appear in a JSON document to URI values for properties or data types in a formal vocabulary (typically an RDF ontology). For example, the standard context "[LTI, 14 IG]":#_LTI__14_IG_ for a ToolProxy contains the following rewrite rules (among others):
+
+bc.   {
+    "@context" = {
+      "lti" : "http://purl.imsglobal.org/vocab/lti/v2/lti#",
+      "tool_proxy_guid" : "lti:tool_proxy_guid",
+      ...
+    }
+  }
+
+
+A context may specify that the values of certain object properties must be rendered as URI references. The following snippet presents an example of such a rule.
+
+bc.   {
+    "@context" = {
+      ...
+      "enabled_capability" : {
+        "@id" : "lti:enabled_capability",
+        "@type" : "@id"
+      }
+      ...
+  }
+
+
+This rule is an example of _type coercion_. For more details about the syntax of a JSON-LD context, see "[JSON-LD-syntax]":#_JSON_LD_syntax_.
+
+h2. 2. The ToolProxy Media Type
+
+The following list defines the necessary and sufficient conditions for a document to conform to the @application/vnd.ims.lti.v2.toolproxy+json@ media type.
+
+# The document MUST be a valid JSON document, in accordance with "[RFC4627]":#_RFC4627_.
+# The document MUST contain either a single top-level JSON object, or an array of top-level JSON objects. The first object encountered (either the single top-level object or the first element of the array) is called the _root_ object.
+# The root object must have a <tt>@type</tt> property whose value is "@ToolProxy@".
+# Every top-level object MUST have a <tt>@context</tt> property that references one or more JSON-LD contexts (either by URI or by value).
+# Collectively, the set of contexts imported by the root object MUST contain all of the terms found in the _standard context_ "[LTI, 14 IG]":#_LTI__14_IG_. In particular, the set of imported contexts must contain all the simple names that appear in the standard context, and those simple names must resolve to the same values that appear in the standard context. This requirement may be satisfied by ensuring that the root object imports the standard context explicitly, or by importing a collection of other contexts that contain equivalent terms.
+# The set of contexts imported by the root object MAY include additional terms that do not appear in the standard context "[LTI, 14 IG]":#_LTI__14_IG_.
+# Duplicate mappings for names among the imported contexts MUST be overwritten on a last-defined-overrides basis.
+# If the JSON-LD context coerces a property to a URI reference, then values of that property MUST be expressed as a fully-qualified URI reference, or a CURIE or a simple name declared by the context.
+# A _collection property_ is any property whose maximum cardinality is greater than 1. Except for the <tt>@context</tt> property, a non-empty collection MUST always be represented as a JSON array whose values are enclosed in square brackets. Whereas, in general, the JSON-LD syntax specification allows a collection containing a single value to omit the square brackets, the @application/vnd.ims.lti.v2.toolproxy+json@ media type requires square brackets for all non-empty collections other than the <tt>@context</tt> property.
+# An empty collection property may be represented either by an empty array (i.e. square brackets containing no elements), or by omitting the property altogether.
+# Like all other properties, the <tt>@id</tt> property of a given object is mandatory if the minimum cardinality of that property, as defined by this specification, is greater than zero. The <tt>@id</tt> property is optional for all other objects (even if it is not explicitly listed in the set of properties for an object). Conforming implementations SHOULD include the <tt>@id</tt> property for all addressable objects.
+# If the <tt>@id</tt> property is mandatory, then the value MUST NOT treat the object as a blank node. In this case, the <tt>@id</tt> value MUST NOT be a CURIE with an underscore as the prefix.
+# Every top-level object MUST contain a <tt>@type</tt> property and a @context property.
+# An embedded object MUST contain a <tt>@type</tt> property if the object value is a subtype of the declared range of the property.
+# Values for properties named in the standard context "[LTI, 14 IG]":#_LTI__14_IG_, MUST not utilize the String Internationalization or Typed Value syntax as described in "[JSON-LD-syntax]":#_JSON_LD_syntax_.
+# If the context does not coerce the value of an object property to a URI reference, then the object must be rendered as an embedded object.
+# The properties of embedded objects must respect the cardinality constraints specified in the section titled JSON Data Bindings.
+
+h2. 3. JSON Data Bindings
+
+Figure 6 presents a complete graphical representation of the JSON binding for a ToolProxy object. The subsections following this figure provide details about each object that appears in the JSON binding for a ToolProxy object.
+
+!images/overview.png!
+
+
+Figure 6.  Complete JSON representation of ToolProxy
+
+h3. 3.1 BaseUrlChoice
+
+Defines the base URL that is used for certain kinds of resources referenced in a ToolProfile. The kinds of resources to which the base URL applies is specified by an associated BaseUrlSelector. If the BaseUrlChoice does not have an associated selector, then it applies universally to all resources referenced in the Tool Profile.
+
+bc(jsonSnippet). {
+  "default_base_url" : "http://acme.example.com/",
+  "secure_base_url" : "https://acme.example.com/",
+  "selector" : { ... }
+}
+
+
+!images/BaseUrlChoice.png!
+
+
+Figure 7.  BaseUrlChoice
+
+|_. Property|_. Mult|_. Description|_. Type|
+|default_base_url|1|This is the base URL that should be used by default for all entities specified by the associated BaseUrlSelector. The secure_base_url attribute may override this default Base URL.|xs:anyURI|
+|secure_base_url|0..1|This is the base URL that should be used whenever security is enabled. If this base URL is not defined, then the default_base_url is used in all circumstances.|xs:anyURI|
+|selector|0..1|A resource that specifies the objects to which this BaseUrlChoice applies.|"BaseUrlSelector":#BaseUrlSelector|
+
+
+Table 1.  BaseUrlChoice properties
+
+h3. 3.2 BaseUrlSelector
+
+This resource specifies the type of objects to which a set of base URLs apply.
+
+bc(jsonSnippet). {
+  "applies_to" : [ ... ]
+}
+
+
+!images/BaseUrlSelector.png!
+
+
+Figure 8.  BaseUrlSelector
+
+Property
+
+Mult
+
+Description
+
+Type
+
+applies_to
+
+1..*
+
+The class of resources selected by this BaseUrlSelector.
+
+Class
+
+(URI reference)
+
+Table 2.  BaseUrlSelector properties
+
+h3. 3.3 Capability
+
+Represents a capability that may be declared by a Tool Consumer in its profile and enabled by a Tool when an integration contract is established.
+
+!images/Capability.png!
+
+
+Figure 9.  Capability
+
+Direct Known Subtypes:
+
+"MessageType":#MessageType
+
+@Capability@ instances are enumerable, and they must be referenced by a simple name. The default vocabulary of simple names for instances of the @Capability@ class are listed in Table 3.
+
+Simple Name
+
+URI / Description
+
+ltiv:Context.org
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Context.org
+
+A URI describing the organisational properties of the context from which a launch request originates (typically a CourseSection); for example, an ldap:// URI such as
+
+bc. ldap://host.com:6666/cid=abc123,ou=dept,dc=plainjoe,dc=org
+
+
+. If more than one format of organisational URI is specified, each should be separated with a space.
+
+ltiv:CourseOffering.academicSession
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseOffering.academicSession
+
+The text data that is used to describe the academic session for the course offering.
+
+In the LIS Database, this value corresponds to
+
+bc. courseOfferingRecord/courseOffering/defaultCredits/textString
+
+
+CourseOffering.credits
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseOffering.credits
+
+The default credits set for this Course Offering
+
+In the LIS Database, this value corresponds to
+
+bc. courseOfferingRecord/courseOffering/defaultCredits/textString
+
+
+CourseOffering.label
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseOffering.label
+
+A human readable label for the Course Offering
+
+In the LIS Database, this value corresponds to
+
+bc. courseOfferingRecord/courseOffering/label
+
+
+ltiv:CourseOffering.longDescription
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseOffering.longDescription
+
+A long description of the Course Offering.
+
+In the LIS Database, this value corresponds to
+
+bc. courseOfferingRecord/courseOffering/catalogDescription/longDescription
+
+
+CourseOffering.shortDescription
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseOffering.shortDescription
+
+A short description of the Course Offering.
+
+In the LIS Database, this value corresponds to
+
+bc. courseOfferingRecord/courseOffering/catalogDescription/shortDescription
+
+
+CourseOffering.sourcedId
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseOffering.sourcedId
+
+The LIS identifier for the Course Offering.
+
+In the LIS Database, this value corresponds to
+
+bc. courseOfferingRecord/sourcedId
+
+
+CourseOffering.title
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseOffering.title
+
+The title of the Course Offering.
+
+In the LIS Database, this value corresponds to
+
+bc. courseOfferingRecord/courseOffering/title
+
+
+ltiv:CourseSection.courseNumber
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseSection.courseNumber
+
+The course number, such as "Biology 101". In general, this number is not just a numeric value.
+
+In the LIS Database, this value corresponds to
+
+bc. courseSectionRecord/courseSection/courseNumber/textString
+
+
+CourseSection.credits
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseSection.credits
+
+The default credits set for the Course Section.
+
+In the LIS Database, this value corresponds to
+
+bc. courseSectionRecord/courseSection/defaultCredits/textString
+
+
+CourseSection.dataSource
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseSection.dataSource
+
+An identifier for the original source system of the CourseSection object.
+
+In the LIS Database, this value corresponds to
+
+bc. courseSectionRecord/courseSection/dataSource
+
+
+CourseSection.dept
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseSection.dept
+
+The department within which the Course Section is offered.
+
+In the LIS Database, this value corresponds to
+
+bc. courseSectionRecord/courseSection/org[type/textString="Dept"]/orgName/textString
+
+
+ltiv:CourseSection.enrollControl.allowed
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseSection.enrollControl.allowed
+
+A boolean value that specifies whether the Tool Provider can enroll people in the Course Section. The value @false@ indicates that only the source system can enroll people.
+
+In the LIS Database, this value corresponds to
+
+bc. courseSectionRecord/courseSection/enrollControl/enrollAllowed
+
+
+ltiv:CourseSection.enrollControll.accept
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseSection.enrollControll.accept
+
+A boolean value that specifies whether the Course Section is accepting enrollments.
+
+In the LIS Database, this value corresponds to
+
+bc. courseSectionRecord/courseSection/enrollControl/enrollAccept
+
+
+ltiv:CourseSection.label
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseSection.label
+
+A human readable label for the Course Section.
+
+In the LIS Database, this value corresponds to
+
+bc. courseSectionRecord/courseSection/label
+
+
+ltiv:CourseSection.longDescription
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseSection.longDescription
+
+A long description of the Course Section.
+
+In the LIS Database, this value corresponds to
+
+bc. courseSectionRecord/courseSection/catalogDescription/longDescription
+
+
+CourseSection.maxNumberofStudents
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseSection.maxNumberofStudents
+
+The maximum number of students that can be enrolled in the Course Section.
+
+In the LIS Database, this value corresponds to
+
+bc. courseSectionRecord/courseSection/maxNumberofStudents
+
+
+CourseSection.numberofStudents
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseSection.numberofStudents
+
+The number of students who are enrolled in the Course Section.
+
+In the LIS Database, this value corresponds to
+
+bc. courseSectionRecord/courseSection/numberofStudents
+
+
+CourseSection.shortDescription
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseSection.shortDescription
+
+A short description of the Course Section.
+
+In the LIS Database, this value corresponds to
+
+bc. courseSectionRecord/courseSection/catalogDescription/shortDescription
+
+
+ltiv:CourseSection.sourceSectionId
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseSection.sourceSectionId
+
+The identifier for the source Course Section from which the target Course Section was cloned.
+
+In the LIS Database, this value corresponds to
+
+bc. createCourseSectionFromCourseSectionRequest/sourcedId
+
+
+ltiv:CourseSection.sourcedId
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseSection.sourcedId
+
+The LIS identifier for the Course Section
+
+In the LIS Database, this value corresponds to
+
+bc. courseSection/sourcedId
+
+
+CourseSection.timeFrame.begin
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseSection.timeFrame.begin
+
+The date and time when the Course Section becomes available.
+
+In the LIS Database, this value corresponds to
+
+bc. courseSectionRecord/courseSection/timeFrame/begin
+
+
+CourseSection.timeFrame.end
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseSection.timeFrame.end
+
+The date and time after which the Course Section is no longer available.
+
+In the LIS Database, this value corresponds to
+
+bc. courseSectionRecord/courseSection/timeFrame/end
+
+
+CourseSection.title
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseSection.title
+
+The title of the Course Section.
+
+In the LIS Database, this value corresponds to
+
+bc. courseSectionRecord/courseSection/title
+
+
+ltiv:CourseTemplate.courseNumber
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseTemplate.courseNumber
+
+The course number, such as "Biology 101". In general, this number is not just a numeric value.
+
+In the LIS Database, this value corresponds to
+
+bc. courseTemplateRecord/courseTemplate/courseNumber/textString
+
+
+ltiv:CourseTemplate.credits
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseTemplate.credits
+
+The default credits set for this Course Template.
+
+In the LIS Database, this value corresponds to
+
+bc. courseTemplateRecord/courseTemplate/defaultCredits/textString
+
+
+CourseTemplate.label
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseTemplate.label
+
+A human readable label used to help identify the Course Template.
+
+In the LIS Database, this value corresponds to
+
+bc. courseTemplateRecord/courseTemplate/label/textString
+
+
+ltiv:CourseTemplate.longDescription
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseTemplate.longDescription
+
+A long description of the Course Template.
+
+In the LIS Database, this value corresponds to
+
+bc. courseTemplateRecord/courseTemplate/catalogDescription/longDescription
+
+
+ltiv:CourseTemplate.shortDescription
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseTemplate.shortDescription
+
+A short description of the Course Template.
+
+In the LIS Database, this value corresponds to
+
+bc. courseTemplateRecord/courseTemplate/catalogDescription/shortDescription
+
+
+ltiv:CourseTemplate.sourcedId
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseTemplate.sourcedId
+
+The LIS identifier for the Course Template.
+
+In the LIS Database, this value corresponds to
+
+bc. courseTemplateRecord/sourcedId
+
+
+ltiv:CourseTemplate.title
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#CourseTemplate.title
+
+The title of the Course Template.
+
+In the LIS Database, this value corresponds to
+
+bc. courseTemplateRecord/courseTemplate/title/textString
+
+
+ltiv:Group.email
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Group.email
+
+An email address used for posting messages to members of the group.
+
+In the LIS Database, this value corresponds to
+
+bc. groupRecord/group/email
+
+
+Group.enrollControl.accept
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Group.enrollControl.accept
+
+A boolean value that specifies whether the Group is accepting enrollments.
+
+In the LIS Database, this value corresponds to
+
+bc. groupRecord/group/enrollControl/enrollAccept
+
+
+ltiv:Group.enrollControl.allowed
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Group.enrollControl.allowed
+
+A boolean value that specifies whether the Tool Provider can enroll people in the Group. The value @false@ indicates that only the source system can enroll people.
+
+In the LIS Database, this value corresponds to
+
+bc. groupRecord/group/enrollControl/enrollAllowed
+
+
+ltiv:Group.grouptype
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Group.grouptype
+
+A URI that uniquely identifies the type of group. This convention differs from the LIS convention of using a structured object to describe the type of a group. Ideally, the URI should resolve to JSON-LD document that describes the group type. However, any URI that uniquely identifies the group type in accordance with the rules of the grouptype scheme is acceptable.
+
+ltiv:Group.longDescription
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Group.longDescription
+
+A long description of the Group.
+
+In the LIS Database, this value corresponds to
+
+bc. groupRecord/group/description/longDescription
+
+
+ltiv:Group.parentId
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Group.parentId
+
+An identifier for the parent group within which the target group is nested.
+
+In the LIS Database, this value corresponds to
+
+bc. groupRecord/group/relationship[relation="Parent"]/sourcedId
+
+
+ltiv:Group.shortDescription
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Group.shortDescription
+
+A short description of the Group.
+
+In the LIS Database, this value corresponds to
+
+bc. groupRecord/group/description/shortDescription
+
+
+Group.sourcedId
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Group.sourcedId
+
+The LIS identifier for the Group.
+
+In the LIS Database, this value corresponds to
+
+bc. groupRecord/sourcedId
+
+
+ltiv:Group.timeFrame.begin
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Group.timeFrame.begin
+
+The date and time when access to Group resources begins.
+
+In the LIS Database, this value corresponds to
+
+bc. groupRecord/group/timeframe/begin
+
+
+Group.timeFrame.end
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Group.timeFrame.end
+
+The date and time when access to Group resources ends.
+
+In the LIS Database, this value corresponds to
+
+bc. groupRecord/group/timeframe/end
+
+
+ltiv:Group.url
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Group.url
+
+The web address of the Group.
+
+In the LIS Database, this value corresponds to
+
+bc. groupRecord/group/url
+
+
+LineItem.dataSource
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#LineItem.dataSource
+
+An identifier for the original source system of the LineItem record.
+
+In the LIS Database, this value corresponds to
+
+bc. lineItemRecord/lineItem/dataSource
+
+
+ltiv:LineItem.resultValue.max
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#LineItem.resultValue.max
+
+The maximum numeric score that a learner may earn on the assignment associated with this LineItem.
+
+In the LIS Database, this value corresponds to
+
+bc. resultValueRecord/resultValue/valueRange/max
+
+
+where
+
+<pre>
+resultValueRecord.sourcedId = lineItemRecord/lineItem/resultValueSourcedId
+
+    
+    
+      ltiv:LineItem.sourcedId
+      http://purl.imsglobal.org/vocab/lti/v2/variable#LineItem.sourcedIdThe LIS identifier for the LineItem
+In the LIS Database, this value corresponds to 
+lineItemRecord/sourcedId
+</pre>
+
+LineItem.type
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#LineItem.type
+
+A URI that uniquely identifies the LineItem type. This convention differs from the LIS convention of using a structured object to describe LineItem types. The URI _should_ resolve to a JSON-LD resource that describes the LineItem type. As a best practice the URI should start with a base URL that identifies the LineItemType vocabulary and end with a relative URL for a type within that vocabulary.
+
+In the LIS Database, the LineItem type is given by
+
+bc. lineItemRecord/lineItem/lineItemType
+
+
+ltiv:LineItem.type.displayName
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#LineItem.type.displayName
+
+The display name for the LineItemType.
+
+In the LIS Database, this value corresponds to
+
+bc. lineItemTypeRecord/lineItemType/displayName
+
+
+LtiLink.custom.url
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#LtiLink.custom.url
+
+The endpoint URL for accessing link-level tool settings.
+
+Membership.collectionSourcedId
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Membership.collectionSourcedId
+
+The LIS identifier for the organizational unit (Course Section, Group, etc.) to which the Membership pertains.
+
+In the LIS Database, this value corresponds to
+
+bc. membershipRecord/membership/collectionSourcedId
+
+
+ltiv:Membership.createdTimestamp
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Membership.createdTimestamp
+
+The date and time when the membership role was created. If the Person has more than one role within the organizational unit, then this value is a comma separated list corresponding to the roles listed by the Membership.role variable.
+
+In the LIS Database, this value corresponds to
+
+bc. membershipRecord/membership/member/role/dateTime
+
+
+ltiv:Membership.dataSource
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Membership.dataSource
+
+An identifier for the original source system of the Membership record.
+
+In the LIS Database, this value corresponds to
+
+bc. membershipRecord/membership/member/role/dataSource
+
+
+ltiv:Membership.personSourcedId
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Membership.personSourcedId
+
+The LIS identifier for the Person associated with the Membership.
+
+In the LIS Database, this value corresponds to
+
+bc. membershipRecord/membership/member/personSourcedId
+
+
+ltiv:Membership.role
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Membership.role
+
+A comma separated list of roles that the Person has within the organizational unit.
+
+In the LIS Database, this value corresponds to
+
+bc. membershipRecord/membership/member/role/roleType
+
+
+ltiv:Membership.sourcedId
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Membership.sourcedId
+
+The LIS identifier for the Membership.
+
+In the LIS Database, this value corresponds to
+
+bc. membershipRecord/sourcedId
+
+
+Membership.status
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Membership.status
+
+Indicates if the membership is active or inactive. In accordance with the LIS specification, the value should be either @Active@ or @Inactive@. If the Person has more than one role within the organizational unit, then this value is a comma separated list, where the values are ordered in correspondence with the roles named by the Membership.role variable.
+
+In the LIS Database, this value corresponds to
+
+bc. membershipRecord/membership/member/role/status
+
+
+Person.address.country
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.address.country
+
+The country within the user's address.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/address/[addressType/instanceValue/text="Preferred"]addressPart /nameValuePair /[instanceName/text="Country"]/instanceValue/text
+
+
+ltiv:Person.address.locality
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.address.locality
+
+The city, town, or other locality within the user's address.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/address/[addressType/instanceValue/text="Preferred"]addressPart /nameValuePair /[instanceName/text="Locality"]/instanceValue/text
+
+
+Person.address.postcode
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.address.postcode
+
+The postal code within the user's address.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/address/[addressType/instanceValue/text="Preferred"]addressPart /nameValuePair /[instanceName/text="Postcode"]/instanceValue/text
+
+
+ltiv:Person.address.statepr
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.address.statepr
+
+The state or province within the user's address.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/address/[addressType/instanceValue/text="Preferred"]addressPart /nameValuePair/[instanceName/text="Statepr"]/instanceValue/text
+
+
+ltiv:Person.address.street1
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.address.street1
+
+The first line of the user's street address.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/address/[addressType/instanceValue/text="Preferred"]addressPart /nameValuePair /[instanceName/text="NonFieldedStreetAddress1"]/instanceValue /text  
+
+
+ltiv:Person.address.street2
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.address.street2
+
+The second line of the user's street address.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/address/[addressType/instanceValue/text="Preferred"]  addressPart /nameValuePair[instanceName/text="NonFieldedStreetAddress2"] /instanceValue/text 
+
+
+ltiv:Person.address.street3
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.address.street3
+
+The third line of the user's street address.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/address/[addressType/instanceValue/text="Preferred"]addressPart /nameValuePair /[instanceName/text="NonFieldedStreetAddress3"] /instanceValue/text
+
+
+ltiv:Person.address.street4
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.address.street4
+
+The fourth line of the user's street address.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/address/[addressType/instanceValue/text="Preferred"]addressPart /nameValuePair /[instanceName/text="NonFieldedStreetAddress4"] /instanceValue/text
+
+
+Person.address.timezone
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.address.timezone
+
+The user's time zone.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/address/[addressType/instanceValue/text="Preferred"]addressPart /nameValuePair /[instanceName/text="Timezone"]/instanceValue/text
+
+
+ltiv:Person.email.personal
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.email.personal
+
+The user's personal email address
+
+In the LIS Database, this value corresponds to
+
+bc. person/contactinfo[contactinfoType/instanceValue/text="Email_Personal"]/contactinfoValue /text
+
+
+ltiv:Person.email.primary
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.email.primary
+
+The user's primary email address.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/contactinfo[contactinfoType/instanceValue/text="Email_Primary"] /contactinfoValue/text
+
+
+ltiv:Person.name.family
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.name.family
+
+The family name of the user.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/name/partName[instanceName/text="Family”]/instanceValue/text 
+
+
+Person.name.full
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.name.full
+
+The full name of the user.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/formname/[formnameType/instanceValue/text="Full"] /formattedName/text
+
+
+Person.name.given
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.name.given
+
+The given name of the user.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/name/partName[instanceName/text="Given”]/instanceValue/text
+
+
+ltiv:Person.name.middle
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.name.middle
+
+The middle name of the user.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/name/partName[instanceName/text="Middle”]/instanceValue/text 
+
+
+Person.name.prefix
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.name.prefix
+
+The prefix for the user's name, such as _Dr._, _Mr._, _Ms._ etc.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/name/partName[instanceName/text="Prefix”]/instanceValue/text 
+
+
+ltiv:Person.name.suffix
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.name.suffix
+
+The suffix for the user's name, such as _Jr._, _II_, etc.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/name/partName[instanceName/text="Suffix”]/instanceValue/text 
+
+
+ltiv:Person.phone.home
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.phone.home
+
+The user's home phone number
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/contactinfo [contactinfoType/instanceValue/text="Telephone_Home"]/contactinfoValue /text
+
+
+ltiv:Person.phone.mobile
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.phone.mobile
+
+The user's mobile phone number
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/contactinfo[contactinfoType/instanceValue/text="Mobile"] /contactInfoValue/text
+
+
+Person.phone.primary
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.phone.primary
+
+The user's primary phone number
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/contactinfo [contactinfoType/instanceValue/text="Telephone_Primary"]/contactinfoValue /text
+
+
+ltiv:Person.phone.work
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.phone.work
+
+The user's work phone number.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/contactinfo [contactinfoType/instanceValue/text="Telephone_Work"]/contactinfoValue /text
+
+
+Person.sms
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.sms
+
+The number at which the user prefers to receive SMS text messages.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/contactinfo[contactinfoType/instanceValue/text="SMS"]  /contactinfoValue/text
+
+
+ltiv:Person.sourcedId
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.sourcedId
+
+The LIS identifier for the user.
+
+In the LIS Database, this value corresponds to @personRecord/sourcedId@
+
+Person.webaddress
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Person.webaddress
+
+The user's web address. This could be a facebook address, a blog, or any other web address linked to the user. The value should be a URL.
+
+In the LIS Database, this value corresponds to
+
+bc. personRecord/person/contactinfo[contactinfoType/instanceValue/text="Web-Address"] /contactinfoValue/text
+
+
+ltiv:ResourceLink.description
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#ResourceLink.description
+
+A plain text description of the link's destination, suitable for display alongside the link.
+
+ltiv:ResourceLink.title
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#ResourceLink.title
+
+A plain text title for the resource.
+
+Result.autocreate
+
+http://purl.imsglobal.org/vocab/lti/v2/capability#Result.autocreate
+
+Result.comment
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Result.comment
+
+A comment associated with the outcome which may be made visible to the student.
+
+ltiv:Result.createdTimestamp
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Result.createdTimestamp
+
+The date and time when the Result was created.
+
+In the LIS Database, this value corresponds to
+
+bc. 
+
+
+ltiv:Result.dataSource
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Result.dataSource
+
+An identifier for the original source system of the Result record.
+
+In the LIS Database, this value corresponds to
+
+bc. resultRecord/result/dataSource
+
+
+Result.resultScore
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Result.resultScore
+
+The score that the learner earned on the assignment or activity to which this Result pertains.
+
+In the LIS Database, this value corresponds to
+
+bc. resultRecord/result/resultScore/textString
+
+
+ltiv:Result.sourcedId
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Result.sourcedId
+
+The LIS identifier for the Result resource.
+
+In the LIS Database, this value corresponds to
+
+bc. 
+
+
+ltiv:Result.status
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Result.status
+
+A URI for the status of the Result. As a best practice, the URI _should_ resolve to a JSON-LD description of the status value or a term in a VDEX file. The vocabulary for Result status values is extensible. The set of standard values includes:
+
+* http://www.imsglobal.org/lis/omsv1p0/statusofresultvocabularyv1p0#Unmoderated
+* http://www.imsglobal.org/lis/omsv1p0/statusofresultvocabularyv1p0#Tobemoderated
+* http://www.imsglobal.org/lis/omsv1p0/statusofresultvocabularyv1p0#Pending
+* http://www.imsglobal.org/lis/omsv1p0/statusofresultvocabularyv1p0#Completed
+
+Result.url
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#Result.url
+
+The URL of the Result resource. Client applications may issue an HTTP request to read, update or delete the resource at this URL.
+
+ltiv:ToolProxy.custom.url
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#ToolProxy.custom.url
+
+The endpoint URL for accessing system-wide tool settings.
+
+ToolProxyBinding.custom.url
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#ToolProxyBinding.custom.url
+
+The endpoint URL for accessing context-level tool settings.
+
+User.id
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#User.id
+
+Corresponds to the user_id launch parameterfrom the @LaunchMixin@ class. This is the local identifier for the user within the Tool Consumer system.
+
+User.image
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#User.image
+
+The URL for an image of the user suitable for use as a profile picture or avatar.
+
+User.org
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#User.org
+
+A URI describing the user's organisational properties; for example, an ldap:// URI such as
+
+bc. ldap://host.com:6666/uid=user,ou=people,dc=example,dc=com
+
+
+. If more than one format of organisational URI is specified, each should be separated with a space.
+
+User.username
+
+http://purl.imsglobal.org/vocab/lti/v2/variable#User.username
+
+The username that identifies the user within the Tool Consumer system.
+
+Table 3.  Known simple names for Capability objects
+
+h3. 3.4 Contact
+
+Contact information for the associated object.
+
+bc(jsonSnippet). {
+  "email" : "info@example.com"
+}
+
+
+!images/Contact.png!
+
+
+Figure 10.  Contact
+
+|_. Property|_. Mult|_. Description|_. Type|
+|email|1|The email of the primary contact for the associated object.|xs:normalizedString|
+
+
+Table 4.  Contact properties
+
+h3. 3.5 DataValue.Type
+
+!images/DataValue.Type.png!
+
+
+Figure 11.  DataValue.Type
+
+h3. 3.6 GUID.Type
+
+!images/GUID.Type.png!
+
+
+Figure 12.  GUID.Type
+
+h3. 3.7 HttpMethod
+
+Enumerates the HTTP methods that can be used when sending a message, as defined by IETF RFC 2616 .
+
+!images/HttpMethod.png!
+
+
+Figure 13.  HttpMethod
+
+@HttpMethod@ instances are enumerable, and they must be referenced by a simple name. The default vocabulary of simple names for instances of the @HttpMethod@ class are listed in Table 5.
+
+Simple Name
+
+URI / Description
+
+GET
+
+http://purl.imsglobal.org/vocab/lti/v2/lti#GET
+
+POST
+
+http://purl.imsglobal.org/vocab/lti/v2/lti#POST
+
+Table 5.  Known simple names for HttpMethod objects
+
+h3. 3.8 IconEndpoint
+
+Defines the path for an Icon.
+
+bc(jsonSnippet). {
+  "path" : "images/bb/en/icon.png"
+}
+
+
+!images/IconEndpoint.png!
+
+
+Figure 14.  IconEndpoint
+
+|_. Property|_. Mult|_. Description|_. Type|
+|path|1|This attribute specifies the path for an endpoint such as a MessageHandler or an Icon. Typically, this path is relative to one of the base URL values defined in a BaseUrlChoice. In the case of a MessageHandler, the path may be an absolute path if the associated message type explicitly declares that an absolute path is allowed.|xs:anyURI|
+
+
+Table 6.  IconEndpoint properties
+
+h3. 3.9 IconInfo
+
+Contains information about a graphical icon that may be displayed in the Tool Consumer's user interface.
+
+bc(jsonSnippet). {
+  "default_location" : { ... },
+  "key" : "iconStyle.default.path"
+}
+
+
+!images/IconInfo.png!
+
+
+Figure 15.  IconInfo
+
+Property
+
+Mult
+
+Description
+
+Type
+
+default_location
+
+0..1
+
+Specifies the default path to an icon. The absolute URL is formed by appending this path to the appropriate base URL for icons.
+
+"IconEndpoint":#IconEndpoint
+
+key
+
+0..1
+
+If localization is supported then the 'key' attribute identifies a property in the resource bundle provided in response to the get-bundle-request message. The value of that property is the locale-specific path to the icon.
+
+"Name.Type":#Name.Type
+
+icon_style
+
+*
+
+The style of the icon referenced by this IconInfo.
+
+"IconStyle":#IconStyle
+
+(Simple Name reference)
+
+Table 7.  IconInfo properties
+
+h3. 3.10 IconStyle
+
+A resource that specifies the style for an Icon.
+
+The LTI standard does not define any particular Icon styles. Each vendor is free to publish its own set of icon styles. A typical style might specify dimensions of the icon or its intended usage. Each IconStyle is uniquely identified by a URI. Ideally, the URI should resolve to a resource that provides a definition of the icon style.
+
+!images/IconStyle.png!
+
+
+Figure 16.  IconStyle
+
+h3. 3.11 LocalizedName
+
+This container stores the default display name for some object plus a key that may be used to lookup a translation for the display name from a resource bundle for a particular locale. The string value has a maximum length of 128 characters.
+
+bc(jsonSnippet). {
+  "default_value" : "Acme Assessments",
+  "key" : "tool.name"
+}
+
+
+!images/LocalizedName.png!
+
+
+Figure 17.  LocalizedName
+
+|_. Property|_. Mult|_. Description|_. Type|
+|default_value|0..1|The default value for the display name. This value is used if (1) the key attribute is undefined, (2) the localization capability is not enabled, or (3) a value for the specified key is not found in the locale-specific resource bundle.|LongName.Type|
+|key|0..1|The key used to lookup the locale-specific value from a resource bundle.|"Name.Type":#Name.Type|
+
+
+Table 8.  LocalizedName properties
+
+h3. 3.12 LocalizedText
+
+This container defines a block of text. The container includes a default value for the text, plus a key that can be used to lookup a locale-specific value from a resource bundle.
+
+bc(jsonSnippet). {
+  "default_value" : "Acme Assessments provide an interactive test format.",
+  "key" : "tool.description"
+}
+
+
+!images/LocalizedText.png!
+
+
+Figure 18.  LocalizedText
+
+|_. Property|_. Mult|_. Description|_. Type|
+|default_value|0..1|This is the default value for the text. This default value is used if (1) the key is not specified, (2) the localization capability is not enabled, or (3) the specified key is not found in the locale-specific resource bundle.|Text.Type|
+|key|0..1|If localization is supported then the key identifies a property in the bundle returned by the get-bundle-request message handler.|"Name.Type":#Name.Type|
+
+
+Table 9.  LocalizedText properties
+
+h3. 3.13 MessageHandler
+
+Defines the features of a message handler, including information about the handler's service endpoint and custom parameters that it expects.
+
+bc(jsonSnippet). {
+  "message_type" : "basic-lti-launch-request",
+  "path" : "handler/launchRequest",
+  "enabled_capability" : [ ... ],
+  "parameter" : [ ... ]
+}
+
+
+!images/MessageHandler.png!
+
+
+Figure 19.  MessageHandler
+
+Property
+
+Mult
+
+Description
+
+Type
+
+message_type
+
+1
+
+The type of message that can be submitted to the Message Handler.
+
+MessageType
+
+(URI reference)
+
+path
+
+1
+
+This attribute specifies the path for an endpoint such as a MessageHandler or an Icon. Typically, this path is relative to one of the base URL values defined in a BaseUrlChoice. In the case of a MessageHandler, the path may be an absolute path if the associated message type explicitly declares that an absolute path is allowed.
+
+xs:anyURI
+
+enabled_capability
+
+*
+
+A capability that is enabled for messages handled by this MessageHandler.
+
+"Capability":#Capability
+
+(Simple Name reference)
+
+parameter
+
+*
+
+Specifies a custom parameter that is expected by the MessageHandler.
+
+"Parameter":#Parameter
+
+Table 10.  MessageHandler properties
+
+h3. 3.14 MessageType
+
+This container holds metadata about a particular type of message. It provides a friendly name (an alias) for the formal Message class name, and it specifies the allowed HTTP methods for Messages of the given type.
+
+!images/MessageType.png!
+
+
+Figure 20.  MessageType
+
+h3. 3.15 Name.Type
+
+!images/Name.Type.png!
+
+
+Figure 21.  Name.Type
+
+h3. 3.16 Parameter
+
+Defines the characteristics of a parameter expected by a MessageHandler.
+
+bc(jsonSnippet). {
+  "name" : "result_url",
+  "variable" : "Result.url"
+}
+
+
+!images/Parameter.png!
+
+
+Figure 22.  Parameter
+
+|_. Property|_. Mult|_. Description|_. Type|
+|name|1|The name of the parameter.|xs:Name|
+|variable|0..1|Denotes that the parameter has a variable value that is automatically substituted at run-time. The value of this attribute is the name for a variable whose value will be added to the message at run-time.|"VariableName.Type":#VariableName.Type|
+|fixed|0..1|Denotes that the value of the parameter is fixed at the time of definition within the product profile. This value must be passed in each message of the associated message type.|"DataValue.Type":#DataValue.Type|
+
+
+Table 11.  Parameter properties
+
+h3. 3.17 ProductFamily
+
+A ProductFamily represents the collection of all versions of a particular product over time. Two products that have the same product _code_ belong to the same ProductFamily. The LTI product model has four levels:
+
+# @ProductFamily@: The collection of all versions of a given product.
+# @ProductInfo@: Encapsulates information about one particular version of a product.
+# @ProductInstance@: Represents one deployed instance of a particular version of a product.
+# @ProductProfile@: Defines a _view_ of a deployed instance of a product. This view may be customized for different integration partners.
+
+Notice that the ProductFamily sits at the top of the product hierarchy. Each product family is owned by a @Vendor@.
+
+bc(jsonSnippet). {
+  "@id" : "http://toolprovider.example.com/vendor/acme.com/product/assessment-tool",
+  "code" : "assessment-tool",
+  "vendor" : { ... }
+}
+
+
+!images/ProductFamily.png!
+
+
+Figure 23.  ProductFamily
+
+|_. Property|_. Mult|_. Description|_. Type|
+|code|1|A unique identifier for the resource.|"Token.Type":#Token.Type|
+|vendor|1|The vendor that owns the ProductFamily.|"Vendor":#Vendor|
+
+
+Table 12.  ProductFamily properties
+
+h3. 3.18 ProductInfo
+
+Encapsulates information about one released version of a product (Tool Consumer or Tool).
+
+bc(jsonSnippet). {
+  "product_name" : { ... },
+  "description" : { ... },
+  "product_version" : "10.3",
+  "technical_description" : { ... },
+  "product_family" : { ... }
+}
+
+
+!images/ProductInfo.png!
+
+
+Figure 24.  ProductInfo
+
+|_. Property|_. Mult|_. Description|_. Type|
+|product_name|1|A name for the product, suitable for display to end users.|"LocalizedName":#LocalizedName|
+|description|0..1|This is a description of the product suitable for display to end-users.|"LocalizedText":#LocalizedText|
+|product_version|1|This is the version of the product.|xs:normalizedString|
+|technical_description|0..1|This is a human readable description of the technical aspects of this product that might be of interest to developers who wish to integrate with this product via LTI.|"LocalizedText":#LocalizedText|
+|product_family|1|An inverse attribute that references the ProductFamily within which this ProductInfo is defined.|"ProductFamily":#ProductFamily|
+
+
+Table 13.  ProductInfo properties
+
+h3. 3.19 ProductInstance
+
+The resource encapsulates information about one deployed instance of a web-based product (Tool or Tool Consumer).
+
+bc(jsonSnippet). {
+  "guid" : "fd75124a-140e-470f-944c-114d2d92bb40",
+  "product_info" : { ... },
+  "support" : { ... },
+  "service_provider" : { ... },
+  "service_owner" : { ... }
+}
+
+
+!images/ProductInstance.png!
+
+
+Figure 25.  ProductInstance
+
+|_. Property|_. Mult|_. Description|_. Type|
+|guid|1|A globally unique identifier for the service provider. As a best practice, this value should match an Internet domain name assigned by ICANN, but any globally unique identifier is acceptable.|"GUID.Type":#GUID.Type|
+|product_info|1|This is metadata about the product described in the profile.|"ProductInfo":#ProductInfo|
+|support|0..1|Contact information for support on this deployed instance of the product (Tool or ToolConsumer).|"Contact":#Contact|
+|service_provider|0..1|This is the service provider that hosts the deployed product.|"ServiceProvider":#ServiceProvider|
+|service_owner|0..1|The entity that owns the services provided by this product instance.|"ServiceOwner":#ServiceOwner|
+
+
+Table 14.  ProductInstance properties
+
+h3. 3.20 PropertyMap
+
+An abstract class whose properties are defined by the Tool Provider and stored in the Tool Consumer. When represented in JSON-LD, the PropertyMap object typically appears as a plain-old JSON object (though it may have a custom JSON-LD context that defines the semantics for the custom properties). It is a best practice for the values in a PropertyMap to be strings. This best practice may be revised if the development community expresses a desire to support other data types in a PropertyMap.
+
+bc(jsonSnippet). {
+  "customerId" : "394892759526"
+}
+
+
+!images/PropertyMap.png!
+
+
+Figure 26.  PropertyMap
+
+h3. 3.21 ResourceHandler
+
+The set of information for a specific resource handler.
+
+bc(jsonSnippet). {
+  "resource_type" : { ... },
+  "resource_name" : { ... },
+  "description" : { ... },
+  "message" : [ ... ],
+  "icon_info" : [ ... ]
+}
+
+
+!images/ResourceHandler.png!
+
+
+Figure 27.  ResourceHandler
+
+|_. Property|_. Mult|_. Description|_. Type|
+|resource_type|1|Identifies the type of resource associated with this ResourceHandler. Resource types are identified by a code that is unique within a given ProductFamily.|"ResourceType":#ResourceType|
+|resource_name|1|The name of the resource handler suitable for display in the TC user interface.|"LocalizedName":#LocalizedName|
+|description|0..1|A description of the service provider, suitable for display to end-users.|"LocalizedText":#LocalizedText|
+|message|1..*|Defines the features of a message handler associated with the resource described by this ResourceHandler.|"MessageHandler":#MessageHandler|
+|icon_info|*|Provides information about a graphical icon that represents the resource described by this ResourceHandler.|"IconInfo":#IconInfo|
+
+
+Table 15.  ResourceHandler properties
+
+h3. 3.22 ResourceType
+
+This class represents all ResourceHandlers of a given type. Two ResourceHandlers that belong to this set are considered to be different versions of the same ResourceHandler.
+
+bc(jsonSnippet). {
+  "code" : "asmt"
+}
+
+
+!images/ResourceType.png!
+
+
+Figure 28.  ResourceType
+
+|_. Property|_. Mult|_. Description|_. Type|
+|code|1|A unique identifier for the resource.|"Token.Type":#Token.Type|
+
+
+Table 16.  ResourceType properties
+
+h3. 3.23 RestService
+
+A descriptor for a REST service.
+
+!images/RestService.png!
+
+
+Figure 29.  RestService
+
+Property
+
+Mult
+
+Description
+
+Type
+
+@id
+
+0..1
+
+The URI that identifies this @RestService@ instance.
+
+xs:anyURI
+
+action
+
+1..*
+
+Specifies an HTTP action that is supported at the REST endpoint. A given endpoint may support more than one action. For example, it is common practice for a collection endpoint to accept POST requests, and a different item endpoint to accept GET, PUT, and DELETE requests.
+
+"HttpMethod":#HttpMethod
+
+(Simple Name reference)
+
+endpoint
+
+1
+
+A URI template that defines the REST endpoint for resources that may be accessed via the REST service. The URI template should conform to the syntax in the proposed IETF standard ["draft-gregorio-uritemplate-08":http://www.ietf.org/id/draft-gregorio-uritemplate-08.txt].
+
+xs:anyURI
+
+format
+
+1..*
+
+The content type (also known as media type) of resources accessed via the endpoint defined by this RestService descriptor. The endpoint of a REST service may support more than one content type if content negotiation is enabled as described in the "HTTP 1.1":http://www.w3.org/Protocols/rfc2616/rfc2616-sec12.html specification.
+
+xs:normalizedString
+
+Table 17.  RestService properties
+
+h3. 3.24 RestServiceProfile
+
+A kind of ServiceProfile specialized for REST services.
+
+bc(jsonSnippet). {
+  "@type" : "RestServiceProfile",
+  "service" : "http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4#ToolProxy.collection",
+  "action" : [ ... ]
+}
+
+
+!images/RestServiceProfile.png!
+
+
+Figure 30.  RestServiceProfile
+
+Property
+
+Mult
+
+Description
+
+Type
+
+service
+
+1
+
+The descriptor for the service that is being profiled.
+
+ServiceDescriptor
+
+(URI reference)
+
+action
+
+1..*
+
+Specifies an HTTP method (POST, GET, PUT, etc.) which the integration partner intends to use. A RestServiceProfile may include more than one action. However, the set of actions declared in a RestServiceProfile must be a subset of actions declared in the RestService referenced by the @service@ property.
+
+"HttpMethod":#HttpMethod
+
+(Simple Name reference)
+
+Table 18.  RestServiceProfile properties
+
+h3. 3.25 SecurityContract
+
+This entity specifies all aspects of the security agreements between Tool Provider and Tool Consumer.
+
+Notice that the security contract distinguishes between @tool_service@s and @end_user_service@s. A @tool_service@ is a service that the Tool invokes when acting on its own. By contrast, a @end_user_service@ is a service that the Tool invokes when acting as an agent for some end user. Consider, for example, the case where a Tool is reporting scores to the Tool Consumer via an outcomes service. When a student submits an assignment, the Tool may calculate a score and post it to the Tool Consumer. In this case the Tool is acting on its own since students generally do not have permission to enter their own scores into a grade book. Now, suppose the Tool exposes a user interface which allows instructors to change a score. In this case, when the Tool posts the modified score to the Tool Consumer grade book, it is acting as an agent for the end user. This example, illustrates that the same service may be referenced as both a @tool_service@ and a @end_user_service@
+
+bc(jsonSnippet). {
+  "shared_secret" : "ThisIsASecret!",
+  "tool_service" : [ ... ],
+  "end_user_service" : [ ... ]
+}
+
+
+!images/SecurityContract.png!
+
+
+Figure 31.  SecurityContract
+
+|_. Property|_. Mult|_. Description|_. Type|
+|shared_secret|1|This is the shared secret used for communications between the Tool Consumer and the Tool Provider. It is expected that the Tool Consumer present an interface to the administrative user for them to activate the Tool Proxy before this secret is ever used by the Tool Consumer. The shared secret may be updated when a tool is re-registered (see the reregisterTool operation of the ToolRegistrationService). In addition, the TC and TP should provide interfaces which allow their respective administrators to change the shared secret through an out-of-band agreement.|xs:string|
+|tool_service|*|The profile for a Tool Consumer service that may be invoked by the Tool acting on its own (as opposed to acting as an agent for some end user).|"RestServiceProfile":#RestServiceProfile|
+|end_user_service|*|The profile for a Tool Consumer service that may be invoked by the Tool when acting as an agent for some end user.|"RestServiceProfile":#RestServiceProfile|
+
+
+Table 19.  SecurityContract properties
+
+h3. 3.26 ServiceDescriptor
+
+This entity defines a profile for a service. It is a "profile" in the sense that it specifies a subset of operations that are declared by the full interface for some service. For example, a profile might list the "read" operations of a service but exclude the "write" operations. This is useful because a product (Tool or TC) might want to offer the read-only operations to a partner, but it might not want to expose write operations. (On the other hand, it is perfectly legitimate for a profile to list all of the operations that are declared in the service interface if desired.) ServiceProfiles are used for four different purposes: (1) they allow a product to advertise the operations that it offers to a partner, (2) they allow a product to declare the operations that it intends to use, (3) they allow a product to advertise the security profiles that are available for service operations, and (4) they allow a product to assert the security profiles that will be used for service operations.
+
+!images/ServiceDescriptor.png!
+
+
+Figure 32.  ServiceDescriptor
+
+Direct Known Subtypes:
+
+"RestService":#RestService
+
+h3. 3.27 ServiceOwner
+
+The entity that owns the services provided by a product instance.
+
+bc(jsonSnippet). {
+  "service_owner_name" : { ... },
+  "description" : { ... },
+  "timestamp" : "2012-04-05T09:08:16-04:00"
+}
+
+
+!images/ServiceOwner.png!
+
+
+Figure 33.  ServiceOwner
+
+|_. Property|_. Mult|_. Description|_. Type|
+|service_owner_name|1||"LocalizedName":#LocalizedName|
+|description|0..1|A description of the service provider, suitable for display to end-users.|"LocalizedText":#LocalizedText|
+|timestamp|1|A timestamp for the ServiceProvider record. This value is useful for determining which record is most current.|xs:dateTime|
+
+
+Table 20.  ServiceOwner properties
+
+h3. 3.28 ServiceProfile
+
+A profile for some service that may be invoked by an integration partner. A profile specifies which methods or operations the integration partner intends to use.
+
+!images/ServiceProfile.png!
+
+
+Figure 34.  ServiceProfile
+
+Direct Known Subtypes:
+
+"RestServiceProfile":#RestServiceProfile
+
+Property
+
+Mult
+
+Description
+
+Type
+
+service
+
+1
+
+The descriptor for the service that is being profiled.
+
+ServiceDescriptor
+
+(URI reference)
+
+Table 21.  ServiceProfile properties
+
+h3. 3.29 ServiceProvider
+
+This resource represents the service provider that hosts a product (Tool or Tool Consumer).
+
+bc(jsonSnippet). {
+  "guid" : "18e7ea50-3d6d-4f6b-aff2-ed3ab577716c",
+  "service_provider_name" : { ... },
+  "description" : { ... },
+  "support" : { ... },
+  "timestamp" : "2012-04-05T09:08:16-04:00"
+}
+
+
+!images/ServiceProvider.png!
+
+
+Figure 35.  ServiceProvider
+
+|_. Property|_. Mult|_. Description|_. Type|
+|@id|0..1|The URI that identifies this @ServiceProvider@ instance.|xs:anyURI|
+|guid|1|A globally unique identifier for the service provider. As a best practice, this value should match an Internet domain name assigned by ICANN, but any globally unique identifier is acceptable.|"GUID.Type":#GUID.Type|
+|service_provider_name|1|The name of the service provider, suitable for display to end users.|"LocalizedName":#LocalizedName|
+|description|0..1|A description of the service provider, suitable for display to end-users.|"LocalizedText":#LocalizedText|
+|support|0..1|Contact information for support from a service provider.|"Contact":#Contact|
+|timestamp|1|A timestamp for the ServiceProvider record. This value is useful for determining which record is most current.|xs:dateTime|
+
+
+Table 22.  ServiceProvider properties
+
+h3. 3.30 Token.Type
+
+!images/Token.Type.png!
+
+
+Figure 36.  Token.Type
+
+h3. 3.31 ToolProfile
+
+The profile for a Tool product.
+
+bc(jsonSnippet). {
+  "lti_version" : "LTI-2p0",
+  "product_instance" : { ... },
+  "base_url_choice" : [ ... ],
+  "resource_handler" : [ ... ]
+}
+
+
+!images/ToolProfile.png!
+
+
+Figure 37.  ToolProfile
+
+|_. Property|_. Mult|_. Description|_. Type|
+|@id|0..1|The URI that identifies this @ToolProfile@ instance.|xs:anyURI|
+|lti_version|1|The identifier for an LTI version that the version supports. A given product (Tool or Tool Consumer) may support multiple versions, but only one version is selected for use in the integration contract.|xs:normalizedString|
+|product_instance|1|An inverse attribute which references the ProductInstance within which this ProductProfile is defined.|"ProductInstance":#ProductInstance|
+|base_url_choice|1..*||"BaseUrlChoice":#BaseUrlChoice|
+|resource_handler|*||"ResourceHandler":#ResourceHandler|
+|message|*||"MessageHandler":#MessageHandler|
+|service_offered|*|The descriptor for a service offered by the product (Tool or Tool Consumer).|"RestService":#RestService|
+
+
+Table 23.  ToolProfile properties
+
+h3. 3.32 ToolProxy
+
+This entity defines the integration contract between a ToolConsumer and a Tool. It is called a "ToolProxy" because its primary purpose is to provide the ToolConsumer with all of the information needed to embed a given Tool within the ToolConsumer system.
+
+bc(jsonSnippet). {
+  "@context" : [ ... ],
+  "@type" : "ToolProxy",
+  "@id" : "http://lms.example.com/ToolProxy/869e5ce5-214c-4e85-86c6-b99e8458a592",
+  "lti_version" : "LTI-2p0",
+  "tool_proxy_guid" : "869e5ce5-214c-4e85-86c6-b99e8458a592",
+  "tool_consumer_profile" : "http://lms.example.com/profile/b6ffa601-ce1d-4549-9ccf-145670a964d4",
+  "tool_profile" : { ... },
+  "custom" : { ... },
+  "security_contract" : { ... }
+}
+
+
+!images/ToolProxy.png!
+
+
+Figure 38.  ToolProxy
+
+Property
+
+Mult
+
+Description
+
+Type
+
+@context
+
+1..*
+
+This value specifies one or more JSON-LD contexts, either by reference or by value. When multiple contexts are specified, they must be encapsulated within an array.
+
+For most implementations, the value will be the single URI for the standard context associated with the @application/vnd.ims.lti.v2.toolproxy+json@ media type. In this case, the value will be
+
+<blockquote>
+
+@"http://purl.imsglobal.org/ctx/lti/v2/ToolProxy"@
+</blockquote>
+
+JSON-LD Context
+
+@type
+
+1
+
+A simple name identifying the object's type. The standard context "[LTI, 14 IG]":#_LTI__14_IG_ defines the following simple names that are applicable:
+
+* @ToolProxy@
+
+Implementations may use a custom JSON-LD context which defines simple names for additional types that are subtypes of @ToolProxy.@
+
+owl:Class
+
+(Simple Name reference)
+
+@id
+
+0..1
+
+The URI that identifies this @ToolProxy@ instance.
+
+xs:anyURI
+
+lti_version
+
+1
+
+The LTI version that governs the integration between the Tool and ToolConsumer.
+
+xs:token
+
+tool_proxy_guid
+
+1
+
+The globally unique identifier for the ToolProxy (a.k.a. integration contract).
+
+"GUID.Type":#GUID.Type
+
+tool_consumer_profile
+
+1
+
+The profile of the Tool Consumer that is participating in the integration governed by this ToolProxy.
+
+ToolConsumerProfile
+
+(URI reference)
+
+tool_profile
+
+1
+
+The profile of the Tool that is participating in the integration governed by this ToolProxy.
+
+"ToolProfile":#ToolProfile
+
+custom
+
+0..1
+
+A collection of custom properties defined by the Tool Provider and stored in this ToolSettingsContainer.
+
+"PropertyMap":#PropertyMap
+
+security_contract
+
+1
+
+The security aspect of an integration contract between two parties.
+
+"SecurityContract":#SecurityContract
+
+custom_url
+
+0..1
+
+The REST endpoint at which custom tool settings may be accessed for this ToolSettingsContainer.
+
+xs:anyURI
+
+enabled_capability
+
+*
+
+A capability that is enabled for messages handled by this MessageHandler.
+
+"Capability":#Capability
+
+(Simple Name reference)
+
+Table 24.  ToolProxy properties
+
+h3. 3.33 VariableName.Type
+
+!images/VariableName.Type.png!
+
+
+Figure 39.  VariableName.Type
+
+h3. 3.34 Vendor
+
+A person or agency that offers products to the market. The key types of products relevant to LTI are Tools (which are described by Tool Profiles) and Tool Consumers (which are described by Tool Consumer Profiles).
+
+bc(jsonSnippet). {
+  "code" : "acme.com",
+  "vendor_name" : { ... },
+  "description" : { ... },
+  "website" : "http://acme.example.com",
+  "timestamp" : "2012-04-05T09:08:16-04:00",
+  "contact" : { ... }
+}
+
+
+!images/Vendor.png!
+
+
+Figure 40.  Vendor
+
+|_. Property|_. Mult|_. Description|_. Type|
+|@id|0..1|The URI that identifies this @Vendor@ instance.|xs:anyURI|
+|code|1|A unique identifier for the resource.|"Token.Type":#Token.Type|
+|vendor_name|1|Defines a human readable name for the Vendor. The name should be suitable for display in management screens within the Tool Provider system.|"LocalizedName":#LocalizedName|
+|description|0..1|This is a human-readable description of the Vendor.|"LocalizedText":#LocalizedText|
+|website|0..1|This is the URL of the vendor.|xs:anyURI|
+|timestamp|1|A timestamp for the Vendor record. This value is useful for determining which record is most current.|xs:dateTime|
+|contact|0..1|Contact information for this Vendor.|"Contact":#Contact|
+
+
+Table 25.  Vendor properties
+
+h3. 3.35 LongName.Type
+
+Restriction Base
+
+http://www.w3.org/2001/XMLSchema#normalizedString
+
+maxLength
+
+128
+
+Table 26.  Facets of LongName.Type
+
+h3. 3.36 Text.Type
+
+Restriction Base
+
+http://www.w3.org/2001/XMLSchema#string
+
+maxLength
+
+1024
+
+Table 27.  Facets of Text.Type
+
+h2. 4. References
+
+[CURIE-syntax]
+
+Mark Birbeck, Shane McCarron. "_CURIE Syntax 1.0_":http://www.w3.org/TR/curie/. W3C Working Group Note. 16 December 2010.
+
+[JSON-LD-syntax]
+
+Manu Sporny, Dave Longley, Gregg Kellogg, Markus Lanthaler, Mark Birbeck. "_Json-LD Syntax 1.0_":http://www.w3.org/TR/2012/WD-json-ld-syntax-20120712/. 12 July 2012. W3C Working Draft.
+
+[LTI, 14 IG]
+
+Greg McFall, Lance Neumann, Stephen Vickers. IMS GLC Learning Tools Interoperability (LTI) Implementation Guide. Version 2.0 Final Release, December 2013. URL: http://www.imsglobal.org/lti/
+
+[RFC4627]
+
+D. Crockford. "_The application/json Media Type for JavaScript Object Notation (JSON)_":http://www.ietf.org/rfc/rfc4627.txt. Internet RFC 4627. July 2006.
+
+<hr />
+
+h2. About this Document
+
+Title:
+
+ToolProxy JSON Binding in the @application/vnd.ims.lti.v2.toolproxy+json@ format
+
+Co-chairs:
+
+Greg McFall (Pearson), Lance Neumann (Blackboard)
+
+Editor:
+
+Stephen Vickers (IMS Global)
+
+Version:
+
+2.0
+
+Version Date:
+
+6 January 2014
+
+Release:
+
+Final Release
+
+Status:
+
+IMS Final Release
+
+Purpose:
+
+This document is made available for review and comment by the public community at large.
+
+Document Location:
+
+Join the discussion and post comments on the LTI Public Forum: "http://www.imsglobal.org/community/forum/categories.cfm?catid=44":http://www.imsglobal.org/community/forum/categories.cfm?catid=44
+
+h3. List of Contributors
+
+The following list of individuals contributed to the authoring of this document:
+
+
+|Craig Dunk|Desire2learn|Colin Smythe|IMS Global|
+|Greg McFall|Pearson|Matt Stoelting|Cengage|
+|Mark McKell|IMS Global|John Tibbetts|VitalSource|
+|Lance Neumann|Blackboard|Stephen Vickers|IMS Global|
+|Charles Severance|IMS Global|||
+
+
+<hr />
+
+_IMS Global Learning Consortium, Inc. (“IMS Global”) is publishing the information contained in this (“Specification”) for purposes of scientific, experimental, and scholarly collaboration only._
+
+_IMS Global makes no warranty or representation regarding the accuracy or completeness of the Specification. This material is provided on an “As Is” and “As Available” basis._
+
+_The Specification is at all times subject to change and revision without notice._
+
+_It is your sole responsibility to evaluate the usefulness, accuracy, and completeness of the Specification as it relates to you._
+
+_IMS Global would appreciate receiving your comments and suggestions._
+
+_Please contact IMS Global through our website at "http://www.imsglobal.org":http://www.imsglobal.org/_
+
+_Please refer to Document Name:_IMS Global Learning Tools Interoperability Final v2.0
+ _Revision:_ 6 January 2014
+
+                    

@@ -1,0 +1,194 @@
+:textile
+
+  !http://www.imsglobal.org/images/imslogo.png!
+
+
+  h1. #{@json['hydrax:docTitle']}
+
+  h2. #{@json['hydrax:docSubtitle']}
+
+  | Media Type | #{@json['hydrax:mediaType']} |
+  | RDF Type | #{@json['hydrax:rdfType']} |
+  | JSON-LD | #{@json['hydrax:contextURI']} |
+
+  Date Issued: #{@json['hydrax:dateIssued']}
+
+  *IPR and Distribution Notices*
+
+  Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the specification set forth in this document, and to provide supporting documentation.
+
+  IMS takes no position regarding the validity or scope of any intellectual property or other rights that might be claimed to pertain to the implementation or use of the technology described in this document or the extent to which any license under such rights might or might not be available; neither does it represent that it has made any effort to identify any such rights. Information on IMS's procedures with respect to rights in IMS specifications can be found at the IMS Intellectual Property Rights web page: "http://www.imsglobal.org/ipr/imsipr_policyFinal.pdf":http://www.imsglobal.org/ipr/imsipr_policyFinal.pdf.
+
+  Copyright © 2014 IMS Global Learning Consortium. All Rights Reserved.
+
+  Use of this specification to develop products or services is governed by the license with IMS found on the IMS website: "http://www.imsglobal.org/license.html":http://www.imsglobal.org/license.html.
+
+  Permission is granted to all parties to use excerpts from this document as needed in producing requests for proposals.
+
+  The limited permissions granted above are perpetual and will not be revoked by IMS or its successors or assigns.
+
+  THIS SPECIFICATION IS BEING OFFERED WITHOUT ANY WARRANTY WHATSOEVER, AND IN PARTICULAR, ANY WARRANTY OF NONINFRINGEMENT IS EXPRESSLY DISCLAIMED. ANY USE OF THIS SPECIFICATION SHALL BE MADE ENTIRELY AT THE IMPLEMENTER'S OWN RISK, AND NEITHER THE CONSORTIUM, NOR ANY OF ITS MEMBERS OR SUBMITTERS, SHALL HAVE ANY LIABILITY WHATSOEVER TO ANY IMPLEMENTER OR THIRD PARTY FOR ANY DAMAGES OF ANY NATURE WHATSOEVER, DIRECTLY OR INDIRECTLY, ARISING FROM THE USE OF THIS SPECIFICATION.
+
+  Join the discussion and post comments on the LTI Public Forum: "http://www.imsglobal.org/community/forum/categories.cfm?catid=44":http://www.imsglobal.org/community/forum/categories.cfm?catid=44
+
+
+  h2. Abstract
+
+  h2. Table of Contents
+
+  1. "Introduction":#Introduction
+
+  * 1.1 "How To Read this Document":#How_To_Read_this_Document
+  * 1.2 "Reserved Terms":#Reserved_Terms
+  * 1.3 "The JSON-LD Context":#The_JSON-LD_Context
+
+  2. "The #{@json['mediaTypeName']} Media Type":#The_#{@json['mediaTypeName']}_Media_Type
+
+  3. "JSON Data Bindings":#JSON_Data_Bindings
+
+  **Index**
+
+  4. "References":#References
+
+  "About this Document":#About_this_Document
+
+
+
+  h2. 1. Introduction
+
+  **get_introduction()**
+
+  Figure 1 shows the representation of a #{@json['mediaTypeName']}  resource in the #{@json['mediaType']} format.
+
+  <pre>
+  **get_sample()**
+  </pre>
+
+
+  Figure 1.  Example JSON document containing a #{@json['hydrax:mediaTypeName']}  object
+
+  h3. 1.1 How To Read this Document
+
+  This specification defines the structure of a JSON document using a graphical notation. In this notatation, an object is represented by a box that branches out to other boxes corresponding to the properties of that object, as shown in "Figure 2":#sampleObj.
+
+  !images/sampleObj.png!
+
+
+  Figure 2.  Representation of a JSON object
+
+  Figure 2 is not a complete representation of a #{@json['hydrax:mediaTypeName']}  object because there are embedded objects. A complete diagram would show branches emanating from the embedded objects to reveal their properties, and so on, recursively. For a complete representation, see "Figure 6":#completeRep below.
+
+  Each box representing a property specifies the name and type of the property , as shown in "Figure 3":#sampleProperty.
+
+  !images/sampleProperty.png!
+
+
+  Figure 3.  Graphical notation for a property
+
+  If a property is optional, its box will be decorated with a circle that contains a question mark, as shown in "Figure 4":#optional-property.
+
+  !images/optionalproperty.png!
+
+
+  Figure 4.  Example of an optional property
+
+  If a property can have multiple values, then its box in the graphical notation is decorated with a circle that contains a plus sign (+) as shown in "Figure 3":#sampleProperty. In this example, the @applies_to@ property may reference more than one @xs:Class@ object. Ordinarily, these values are encapsulated within a JSON array, but if it turns out that only one value is present, then the square brackets for the array are optional.
+
+  An object within a JSON-LD document may have one of four possible representations:
+
+
+
+  # The object may be identified by a fully-qualified URI reference.
+  # The object may be identified by a Compact URI reference, known as a CURIE "[CURIE-syntax]":#_CURIE_syntax_, that can be expanded to a fully qualified URI
+  # The object may be identified by a simple name that is mapped to a fully-qualified URI. This mapping is defined by the JSON-LD context.
+  # The object may be embedded within the document.
+
+  When an object is to be identified by a fully-qualified URI or a CURIE, the box representing the object will be decorated with the #uri hash tag, as shown in "Figure 3":#sampleProperty.
+
+  When an object or enumerable value is to be identified by a simple name, the box representing the corresponding property will be decorated with the #sn hash tag, as shown in "Figure 5":#snRef.
+
+  !images/snRef.png!
+
+
+  Figure 5.  Property whose value is a simple name reference for an individual object or enumerable value
+
+  h3. 1.2 Reserved Terms
+
+  The JSON-LD standard reserves a handful of property names and tokens that have special meaning. These names and tokens, described below, begin with the '@' symbol.
+
+  <dl>
+  <dt>@context</dt>
+  <dd>Used to reference (by URI or by value) a _context_ which declares the simple names that appear throughout a JSON document.</dd>
+  <dt>@id</dt>
+  <dd>Used to uniquely identify things that are being described in the JSON document. The value of an @id property is either a fully-qualified URI, a CURIE, or a simple name that expands to a fully-qualified URI by virtue of the rules defined in the JSON-LD Context.
+  The @id property may identify a so-called blank node by using a CURIE with an underscore as the prefix. The binding of a JSON-LD document MAY include identifiers for blank nodes, but these identifiers are not required.</dd>
+  <dt>@type</dt>
+  <dd>Used to set the data type of an object or property value.</dd>
+  </dl>
+
+  JSON-LD specifies four other reserved terms (@value, @language, @container, @list). Ordinarily, these terms are not used in the JSON binding for #{@json['hydrax:mediaTypeName']}  objects. However, implementations that extend this specification by including additional properties may utilize these reserved terms in accordance with the rules defined by "[JSON-LD-syntax]":#_JSON_LD_syntax_.
+
+  h3. 1.3 The JSON-LD Context
+
+  In JSON-LD, a context is used to map simple names that appear in a JSON document to URI values for properties or data types in a formal vocabulary (typically an RDF ontology). For example, the standard context "[LTI, 14 IG]":#_LTI__14_IG_ for a #{@json['hydrax:mediaTypeName']} contains the following rewrite rules (among others):
+
+  bc.   **get_context_snipper()**
+
+
+  A context may specify that the values of certain object properties must be rendered as URI references. The following snippet presents an example of such a rule.
+
+  bc.   **get_type_coercion_sample()**
+
+
+  This rule is an example of _type coercion_. For more details about the syntax of a JSON-LD context, see "[JSON-LD-syntax]":#_JSON_LD_syntax_.
+
+  h2. 2. The #{@json['hydrax:mediaTypeName']} Media Type
+
+  The following list defines the necessary and sufficient conditions for a document to conform to the #{@json['hydrax:mediaType']}  media type.
+
+  # The document MUST be a valid JSON document, in accordance with "[RFC4627]":#_RFC4627_.
+  # The document MUST contain either a single top-level JSON object, or an array of top-level JSON objects. The first object encountered (either the single top-level object or the first element of the array) is called the _root_ object.
+  # The root object must have a <tt>@type</tt> property whose value is #{@json['hydrax:mediaType']}.
+  # Every top-level object MUST have a <tt>@context</tt> property that references one or more JSON-LD contexts (either by URI or by value).
+  # Collectively, the set of contexts imported by the root object MUST contain all of the terms found in the _standard context_ "[LTI, 14 IG]":#_LTI__14_IG_. In particular, the set of imported contexts must contain all the simple names that appear in the standard context, and those simple names must resolve to the same values that appear in the standard context. This requirement may be satisfied by ensuring that the root object imports the standard context explicitly, or by importing a collection of other contexts that contain equivalent terms.
+  # The set of contexts imported by the root object MAY include additional terms that do not appear in the standard context "[LTI, 14 IG]":#_LTI__14_IG_.
+  # Duplicate mappings for names among the imported contexts MUST be overwritten on a last-defined-overrides basis.
+  # If the JSON-LD context coerces a property to a URI reference, then values of that property MUST be expressed as a fully-qualified URI reference, or a CURIE or a simple name declared by the context.
+  # A _collection property_ is any property whose maximum cardinality is greater than 1. Except for the <tt>@context</tt> property, a non-empty collection MUST always be represented as a JSON array whose values are enclosed in square brackets. Whereas, in general, the JSON-LD syntax specification allows a collection containing a single value to omit the square brackets, the #{@json['hydrax:mediaType']} media type requires square brackets for all non-empty collections other than the <tt>@context</tt> property.
+  # An empty collection property may be represented either by an empty array (i.e. square brackets containing no elements), or by omitting the property altogether.
+  # Like all other properties, the <tt>@id</tt> property of a given object is mandatory if the minimum cardinality of that property, as defined by this specification, is greater than zero. The <tt>@id</tt> property is optional for all other objects (even if it is not explicitly listed in the set of properties for an object). Conforming implementations SHOULD include the <tt>@id</tt> property for all addressable objects.
+  # If the <tt>@id</tt> property is mandatory, then the value MUST NOT treat the object as a blank node. In this case, the <tt>@id</tt> value MUST NOT be a CURIE with an underscore as the prefix.
+  # Every top-level object MUST contain a <tt>@type</tt> property and a @context property.
+  # An embedded object MUST contain a <tt>@type</tt> property if the object value is a subtype of the declared range of the property.
+  # Values for properties named in the standard context "[LTI, 14 IG]":#_LTI__14_IG_, MUST not utilize the String Internationalization or Typed Value syntax as described in "[JSON-LD-syntax]":#_JSON_LD_syntax_.
+  # If the context does not coerce the value of an object property to a URI reference, then the object must be rendered as an embedded object.
+  # The properties of embedded objects must respect the cardinality constraints specified in the section titled JSON Data Bindings.
+
+
+  h2. 3. JSON Data Bindings
+
+  Figure 6 presents a complete graphical representation of the JSON binding for a #{@json['hydrax:mediaTypeName']} object. The subsections following this figure provide details about each object that appears in the JSON binding for a #{@json['hydrax:mediaTypeName']} object.
+
+  !images/overview.png!
+
+
+  Figure 6.  Complete JSON representation of ToolProxy
+
+  **missing term definition diagram**
+
+- @json['supportedClass'].each do |klass|
+  -if klass['@id'].starts_with? ('cbegreen_hydra')
+
+    :textile
+      h3. #{klass['hydra:title']}
+
+      h4. #{klass['hydra:description']}
+
+      |_. Property |_. Mult |_. Description |_. Type|
+
+    -unless klass['hydra:title'] == 'Record of Performance'
+      -klass['supportedProperty'].each do |prop|
+        :textile
+          |#{prop['hydra:title']}|?|?|?|
+
+
