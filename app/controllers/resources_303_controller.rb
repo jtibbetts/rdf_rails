@@ -29,7 +29,7 @@ class ResourcesController < ApplicationController
           render text: get_contents(full_path), content_type: 'application/rdf'}
         format.ttl {
           render text: get_contents(full_path), content_type: 'application/turtle'}
-        format.json {
+        format.hydra_json {
           render text: get_contents(full_path), content_type: 'application/json' }
         format.jsonld {
           render text: get_contents(full_path), content_type: 'application/jsonld' }

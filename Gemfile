@@ -24,10 +24,14 @@ gem 'nokogiri'
 
 gem 'rdf'
 gem 'rdf-turtle'
+gem 'rdf-n3'
 gem 'json-ld'
 gem 'rdf-rdfxml'
+gem 'sparql'
 
 gem 'lti2', path: '../LTI2-Reference'
+
+gem 'httparty'
 
 gem 'RedCloth'
 

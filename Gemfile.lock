@@ -152,6 +152,7 @@ GEM
     multi_json (1.11.0)
     multi_xml (0.5.5)
     mysql2 (0.3.18)
+    net-http-persistent (2.9.4)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     oauth (0.4.7)
@@ -211,6 +212,8 @@ GEM
       link_header (~> 0.0, >= 0.0.8)
     rdf-aggregate-repo (1.1.0)
       rdf (>= 1.1)
+    rdf-n3 (1.1.3)
+      rdf (~> 1.1, >= 1.1.5)
     rdf-rdfa (1.1.5)
       haml (~> 4.0)
       htmlentities (~> 4.3)
@@ -245,6 +248,17 @@ GEM
       rdoc (~> 4.0)
     sexp_processor (4.5.0)
     slop (3.6.0)
+    sparql (1.1.5)
+      builder (~> 3.0)
+      ebnf (~> 0.3, >= 0.3.5)
+      rdf (~> 1.1, >= 1.1.4)
+      rdf-aggregate-repo (~> 1.1, >= 1.1.0)
+      rdf-xsd (~> 1.1)
+      sparql-client (~> 1.1)
+      sxp (~> 0.1)
+    sparql-client (1.1.5)
+      net-http-persistent (~> 2.9)
+      rdf (~> 1.1)
     sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -281,6 +295,7 @@ DEPENDENCIES
   coffee-rails
   haml-contrib
   haml-rails
+  httparty
   jist
   jquery-turbolinks
   jquery-ui-rails
@@ -298,9 +313,11 @@ DEPENDENCIES
   pry-stack_explorer
   rails (= 4.1.6)
   rdf
+  rdf-n3
   rdf-rdfxml
   rdf-turtle
   sass-rails
   sdoc
+  sparql
   sqlite3
   uglifier
